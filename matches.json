@@ -1,0 +1,165 @@
+{
+  "tournament": "TATA IPL 2026",
+  "matches": [
+    {
+      "match_id": "IPL_01",
+      "date": "2026-03-28",
+      "time": "07:30 PM IST",
+      "venue": "M. Chinnaswamy Stadium, Bengaluru",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Sunrisers Hyderabad"
+    },
+    {
+      "match_id": "IPL_02",
+      "date": "2026-03-29",
+      "time": "07:30 PM IST",
+      "venue": "Wankhede Stadium, Mumbai",
+      "team1": "Mumbai Indians",
+      "team2": "Kolkata Knight Riders"
+    },
+    {
+      "match_id": "IPL_03",
+      "date": "2026-03-30",
+      "time": "07:30 PM IST",
+      "venue": "ACA Stadium, Guwahati",
+      "team1": "Rajasthan Royals",
+      "team2": "Chennai Super Kings"
+    },
+    {
+      "match_id": "IPL_04",
+      "date": "2026-03-31",
+      "time": "07:30 PM IST",
+      "venue": "PCA International Cricket Stadium, New Chandigarh",
+      "team1": "Punjab Kings",
+      "team2": "Gujarat Titans"
+    },
+    {
+      "match_id": "IPL_05",
+      "date": "2026-04-01",
+      "time": "07:30 PM IST",
+      "venue": "BRSABV Ekana Cricket Stadium, Lucknow",
+      "team1": "Lucknow Super Giants",
+      "team2": "Delhi Capitals"
+    },
+    {
+      "match_id": "IPL_06",
+      "date": "2026-04-02",
+      "time": "07:30 PM IST",
+      "venue": "Eden Gardens, Kolkata",
+      "team1": "Kolkata Knight Riders",
+      "team2": "Sunrisers Hyderabad"
+    },
+    {
+      "match_id": "IPL_07",
+      "date": "2026-04-03",
+      "time": "07:30 PM IST",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "team1": "Chennai Super Kings",
+      "team2": "Punjab Kings"
+    },
+    {
+      "match_id": "IPL_08",
+      "date": "2026-04-04",
+      "time": "03:30 PM IST",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "team1": "Delhi Capitals",
+      "team2": "Mumbai Indians"
+    },
+    {
+      "match_id": "IPL_09",
+      "date": "2026-04-04",
+      "time": "07:30 PM IST",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "team1": "Gujarat Titans",
+      "team2": "Rajasthan Royals"
+    },
+    {
+      "match_id": "IPL_10",
+      "date": "2026-04-05",
+      "time": "03:30 PM IST",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "team1": "Sunrisers Hyderabad",
+      "team2": "Lucknow Super Giants"
+    },
+    {
+      "match_id": "IPL_11",
+      "date": "2026-04-05",
+      "time": "07:30 PM IST",
+      "venue": "M. Chinnaswamy Stadium, Bengaluru",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Chennai Super Kings"
+    },
+    {
+      "match_id": "IPL_12",
+      "date": "2026-04-06",
+      "time": "07:30 PM IST",
+      "venue": "Eden Gardens, Kolkata",
+      "team1": "Kolkata Knight Riders",
+      "team2": "Punjab Kings"
+    },
+    {
+      "match_id": "IPL_13",
+      "date": "2026-04-07",
+      "time": "07:30 PM IST",
+      "venue": "ACA Stadium, Guwahati",
+      "team1": "Rajasthan Royals",
+      "team2": "Mumbai Indians"
+    },
+    {
+      "match_id": "IPL_14",
+      "date": "2026-04-08",
+      "time": "07:30 PM IST",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "team1": "Delhi Capitals",
+      "team2": "Gujarat Titans"
+    },
+    {
+      "match_id": "IPL_15",
+      "date": "2026-04-09",
+      "time": "07:30 PM IST",
+      "venue": "Eden Gardens, Kolkata",
+      "team1": "Kolkata Knight Riders",
+      "team2": "Lucknow Super Giants"
+    },
+    {
+      "match_id": "IPL_16",
+      "date": "2026-04-10",
+      "time": "07:30 PM IST",
+      "venue": "ACA Stadium, Guwahati",
+      "team1": "Rajasthan Royals",
+      "team2": "Royal Challengers Bengaluru"
+    },
+    {
+      "match_id": "IPL_17",
+      "date": "2026-04-11",
+      "time": "03:30 PM IST",
+      "venue": "PCA International Cricket Stadium, New Chandigarh",
+      "team1": "Punjab Kings",
+      "team2": "Sunrisers Hyderabad"
+    },
+    {
+      "match_id": "IPL_18",
+      "date": "2026-04-11",
+      "time": "07:30 PM IST",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "team1": "Chennai Super Kings",
+      "team2": "Delhi Capitals"
+    },
+    {
+      "match_id": "IPL_19",
+      "date": "2026-04-12",
+      "time": "03:30 PM IST",
+      "venue": "BRSABV Ekana Cricket Stadium, Lucknow",
+      "team1": "Lucknow Super Giants",
+      "team2": "Gujarat Titans"
+    },
+    {
+      "match_id": "IPL_20",
+      "date": "2026-04-12",
+      "time": "07:30 PM IST",
+      "venue": "Wankhede Stadium, Mumbai",
+      "team1": "Mumbai Indians",
+      "team2": "Royal Challengers Bengaluru"
+    }
+  ]
+}

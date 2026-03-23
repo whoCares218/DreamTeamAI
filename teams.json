@@ -1,0 +1,221 @@
+{
+  "IPL_2026_Squads": [
+    {
+      "team": "Chennai Super Kings (CSK)",
+      "captain": "Ruturaj Gaikwad",
+      "squad": [
+        {"id": 1, "name": "Ruturaj Gaikwad", "role": "Opening Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Sanju Samson", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 3, "name": "Shivam Dube", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 4, "name": "Dewald Brevis", "role": "Batter", "risk_level": "Medium"},
+        {"id": 5, "name": "MS Dhoni", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 6, "name": "Ayush Mhatre", "role": "Opening Batter", "risk_level": "High"},
+        {"id": 7, "name": "Noor Ahmad", "role": "Bowler", "risk_level": "Low"},
+        {"id": 8, "name": "Nathan Ellis", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 9, "name": "Matt Henry", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 10, "name": "Khaleel Ahmed", "role": "Bowler", "risk_level": "Low"},
+        {"id": 11, "name": "Mukesh Choudhary", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 12, "name": "Akeal Hosein", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 13, "name": "Rahul Chahar", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 14, "name": "Shreyas Gopal", "role": "All-rounder", "risk_level": "High"},
+        {"id": 15, "name": "Sarfaraz Khan", "role": "Batter", "risk_level": "High"},
+        {"id": 16, "name": "Anshul Kamboj", "role": "All-rounder", "risk_level": "High"},
+        {"id": 17, "name": "Jamie Overton", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 18, "name": "Gurjapneet Singh", "role": "Bowler", "risk_level": "High"},
+        {"id": 19, "name": "Kartik Sharma", "role": "Wicketkeeper", "risk_level": "High"},
+        {"id": 20, "name": "Zak Foulkes", "role": "All-rounder", "risk_level": "Medium"}
+      ]
+    },
+    {
+      "team": "Mumbai Indians (MI)",
+      "captain": "Hardik Pandya",
+      "squad": [
+        {"id": 1, "name": "Rohit Sharma", "role": "Opening Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Quinton de Kock", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 3, "name": "Suryakumar Yadav", "role": "Batter", "risk_level": "Low"},
+        {"id": 4, "name": "Tilak Varma", "role": "Batter", "risk_level": "Low"},
+        {"id": 5, "name": "Hardik Pandya", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 6, "name": "Will Jacks", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 7, "name": "Naman Dhir", "role": "All-rounder", "risk_level": "High"},
+        {"id": 8, "name": "Shardul Thakur", "role": "Bowler/All-rounder", "risk_level": "Medium"},
+        {"id": 9, "name": "Jasprit Bumrah", "role": "Bowler", "risk_level": "Low"},
+        {"id": 10, "name": "Trent Boult", "role": "Bowler", "risk_level": "Low"},
+        {"id": 11, "name": "Mayank Markande", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 12, "name": "Mitchell Santner", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 13, "name": "Deepak Chahar", "role": "Bowler", "risk_level": "High"},
+        {"id": 14, "name": "Sherfane Rutherford", "role": "Batter", "risk_level": "Medium"},
+        {"id": 15, "name": "Allah Ghazanfar", "role": "Bowler", "risk_level": "High"},
+        {"id": 16, "name": "Raj Angad Bawa", "role": "All-rounder", "risk_level": "High"},
+        {"id": 17, "name": "Atharva Ankolekar", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 18, "name": "Robin Minz", "role": "Wicketkeeper", "risk_level": "High"}
+      ]
+    },
+    {
+      "team": "Royal Challengers Bengaluru (RCB)",
+      "captain": "Rajat Patidar",
+      "squad": [
+        {"id": 1, "name": "Virat Kohli", "role": "Opening Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Phil Salt", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 3, "name": "Venkatesh Iyer", "role": "Batter/All-rounder", "risk_level": "Medium"},
+        {"id": 4, "name": "Rajat Patidar", "role": "Batter", "risk_level": "Low"},
+        {"id": 5, "name": "Jitesh Sharma", "role": "Wicketkeeper Batter", "risk_level": "Medium"},
+        {"id": 6, "name": "Tim David", "role": "Batter", "risk_level": "Low"},
+        {"id": 7, "name": "Romario Shepherd", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 8, "name": "Krunal Pandya", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 9, "name": "Bhuvneshwar Kumar", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 10, "name": "Josh Hazlewood", "role": "Bowler", "risk_level": "Low"},
+        {"id": 11, "name": "Yash Dayal", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 12, "name": "Suyash Sharma", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 13, "name": "Rasikh Dar", "role": "Bowler", "risk_level": "High"},
+        {"id": 14, "name": "Jacob Duffy", "role": "Bowler", "risk_level": "High"},
+        {"id": 15, "name": "Devdutt Padikkal", "role": "Batter", "risk_level": "Medium"},
+        {"id": 16, "name": "Jacob Bethell", "role": "All-rounder", "risk_level": "High"}
+      ]
+    },
+    {
+      "team": "Delhi Capitals (DC)",
+      "captain": "Axar Patel",
+      "squad": [
+        {"id": 1, "name": "KL Rahul", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Prithvi Shaw", "role": "Opening Batter", "risk_level": "High"},
+        {"id": 3, "name": "Nitish Rana", "role": "Batter", "risk_level": "Medium"},
+        {"id": 4, "name": "David Miller", "role": "Batter", "risk_level": "Low"},
+        {"id": 5, "name": "Tristan Stubbs", "role": "Batter", "risk_level": "Low"},
+        {"id": 6, "name": "Axar Patel", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 7, "name": "Ashutosh Sharma", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 8, "name": "Mitchell Starc", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 9, "name": "Kuldeep Yadav", "role": "Bowler", "risk_level": "Low"},
+        {"id": 10, "name": "T Natarajan", "role": "Bowler", "risk_level": "Low"},
+        {"id": 11, "name": "Mukesh Kumar", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 12, "name": "Lungi Ngidi", "role": "Bowler", "risk_level": "High"},
+        {"id": 13, "name": "Pathum Nissanka", "role": "Batter", "risk_level": "Medium"},
+        {"id": 14, "name": "Ben Duckett", "role": "Wicketkeeper Batter", "risk_level": "Medium"},
+        {"id": 15, "name": "Auqib Nabi Dar", "role": "All-rounder", "risk_level": "High"},
+        {"id": 16, "name": "Sameer Rizvi", "role": "Batter", "risk_level": "High"}
+      ]
+    },
+    {
+      "team": "Kolkata Knight Riders (KKR)",
+      "captain": "Ajinkya Rahane",
+      "squad": [
+        {"id": 1, "name": "Ajinkya Rahane", "role": "Opening Batter", "risk_level": "Medium"},
+        {"id": 2, "name": "Finn Allen", "role": "Wicketkeeper Batter", "risk_level": "High"},
+        {"id": 3, "name": "Angkrish Raghuvanshi", "role": "Batter", "risk_level": "Medium"},
+        {"id": 4, "name": "Cameron Green", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 5, "name": "Rinku Singh", "role": "Batter", "risk_level": "Low"},
+        {"id": 6, "name": "Sunil Narine", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 7, "name": "Ramandeep Singh", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 8, "name": "Varun Chakravarthy", "role": "Bowler", "risk_level": "Low"},
+        {"id": 9, "name": "Harshit Rana", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 10, "name": "Matheesha Pathirana", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 11, "name": "Vaibhav Arora", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 12, "name": "Tim Seifert", "role": "Wicketkeeper Batter", "risk_level": "Medium"},
+        {"id": 13, "name": "Rachin Ravindra", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 14, "name": "Umran Malik", "role": "Bowler", "risk_level": "High"},
+        {"id": 15, "name": "Rovman Powell", "role": "Batter", "risk_level": "Medium"},
+        {"id": 16, "name": "Manish Pandey", "role": "Batter", "risk_level": "Medium"}
+      ]
+    },
+    {
+      "team": "Punjab Kings (PBKS)",
+      "captain": "Shreyas Iyer",
+      "squad": [
+        {"id": 1, "name": "Prabhsimran Singh", "role": "Wicketkeeper Batter", "risk_level": "Medium"},
+        {"id": 2, "name": "Priyansh Arya", "role": "Opening Batter", "risk_level": "High"},
+        {"id": 3, "name": "Shreyas Iyer", "role": "Batter", "risk_level": "Low"},
+        {"id": 4, "name": "Nehal Wadhera", "role": "Batter", "risk_level": "Medium"},
+        {"id": 5, "name": "Shashank Singh", "role": "Batter", "risk_level": "Low"},
+        {"id": 6, "name": "Marcus Stoinis", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 7, "name": "Marco Jansen", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 8, "name": "Arshdeep Singh", "role": "Bowler", "risk_level": "Low"},
+        {"id": 9, "name": "Yuzvendra Chahal", "role": "Bowler", "risk_level": "Low"},
+        {"id": 10, "name": "Xavier Bartlett", "role": "Bowler", "risk_level": "High"},
+        {"id": 11, "name": "Azmatullah Omarzai", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 12, "name": "Vyshak Vijaykumar", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 13, "name": "Harpreet Brar", "role": "Bowler", "risk_level": "Low"},
+        {"id": 14, "name": "Lockie Ferguson", "role": "Bowler", "risk_level": "High"},
+        {"id": 15, "name": "Cooper Connolly", "role": "All-rounder", "risk_level": "High"}
+      ]
+    },
+    {
+      "team": "Gujarat Titans (GT)",
+      "captain": "Shubman Gill",
+      "squad": [
+        {"id": 1, "name": "Shubman Gill", "role": "Opening Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Jos Buttler", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 3, "name": "Sai Sudharsan", "role": "Batter", "risk_level": "Low"},
+        {"id": 4, "name": "Glenn Phillips", "role": "Batter/All-rounder", "risk_level": "Medium"},
+        {"id": 5, "name": "Shahrukh Khan", "role": "Batter", "risk_level": "Medium"},
+        {"id": 6, "name": "Rahul Tewatia", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 7, "name": "Rashid Khan", "role": "Bowler/All-rounder", "risk_level": "Low"},
+        {"id": 8, "name": "Washington Sundar", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 9, "name": "Kagiso Rabada", "role": "Bowler", "risk_level": "Low"},
+        {"id": 10, "name": "Mohammed Siraj", "role": "Bowler", "risk_level": "Low"},
+        {"id": 11, "name": "Prasidh Krishna", "role": "Bowler", "risk_level": "High"},
+        {"id": 12, "name": "Jason Holder", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 13, "name": "Sai Kishore", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 14, "name": "Anuj Rawat", "role": "Wicketkeeper", "risk_level": "Medium"},
+        {"id": 15, "name": "Ishant Sharma", "role": "Bowler", "risk_level": "Medium"}
+      ]
+    },
+    {
+      "team": "Rajasthan Royals (RR)",
+      "captain": "Riyan Parag",
+      "squad": [
+        {"id": 1, "name": "Yashasvi Jaiswal", "role": "Opening Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Dhruv Jurel", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 3, "name": "Riyan Parag", "role": "Batter/All-rounder", "risk_level": "Medium"},
+        {"id": 4, "name": "Ravindra Jadeja", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 5, "name": "Shimron Hetmyer", "role": "Batter", "risk_level": "Low"},
+        {"id": 6, "name": "Sam Curran", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 7, "name": "Jofra Archer", "role": "Bowler", "risk_level": "High"},
+        {"id": 8, "name": "Ravi Bishnoi", "role": "Bowler", "risk_level": "Low"},
+        {"id": 9, "name": "Sandeep Sharma", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 10, "name": "Tushar Deshpande", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 11, "name": "Kwena Maphaka", "role": "Bowler", "risk_level": "High"},
+        {"id": 12, "name": "Nandre Burger", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 13, "name": "Donovan Ferreira", "role": "All-rounder", "risk_level": "High"},
+        {"id": 14, "name": "Kuldeep Sen", "role": "Bowler", "risk_level": "High"}
+      ]
+    },
+    {
+      "team": "Lucknow Super Giants (LSG)",
+      "captain": "Rishabh Pant",
+      "squad": [
+        {"id": 1, "name": "Rishabh Pant", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Nicholas Pooran", "role": "Batter", "risk_level": "Low"},
+        {"id": 3, "name": "Aiden Markram", "role": "Batter", "risk_level": "Low"},
+        {"id": 4, "name": "Mitchell Marsh", "role": "All-rounder", "risk_level": "High"},
+        {"id": 5, "name": "Ayush Badoni", "role": "Batter", "risk_level": "Medium"},
+        {"id": 6, "name": "Shahbaz Ahmed", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 7, "name": "Mohammed Shami", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 8, "name": "Mayank Yadav", "role": "Bowler", "risk_level": "High"},
+        {"id": 9, "name": "Avesh Khan", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 10, "name": "Anrich Nortje", "role": "Bowler", "risk_level": "High"},
+        {"id": 11, "name": "Mohsin Khan", "role": "Bowler", "risk_level": "High"},
+        {"id": 12, "name": "Wanindu Hasaranga", "role": "All-rounder", "risk_level": "Low"},
+        {"id": 13, "name": "Arshin Kulkarni", "role": "All-rounder", "risk_level": "High"},
+        {"id": 14, "name": "Manimaran Siddharth", "role": "Bowler", "risk_level": "Medium"}
+      ]
+    },
+    {
+      "team": "Sunrisers Hyderabad (SRH)",
+      "captain": "Ishan Kishan",
+      "squad": [
+        {"id": 1, "name": "Travis Head", "role": "Opening Batter", "risk_level": "Low"},
+        {"id": 2, "name": "Abhishek Sharma", "role": "Opening Batter", "risk_level": "Low"},
+        {"id": 3, "name": "Ishan Kishan", "role": "Wicketkeeper Batter", "risk_level": "Medium"},
+        {"id": 4, "name": "Heinrich Klaasen", "role": "Wicketkeeper Batter", "risk_level": "Low"},
+        {"id": 5, "name": "Nitish Kumar Reddy", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 6, "name": "Liam Livingstone", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 7, "name": "Harshal Patel", "role": "Bowler", "risk_level": "Low"},
+        {"id": 8, "name": "Jaydev Unadkat", "role": "Bowler", "risk_level": "Medium"},
+        {"id": 9, "name": "Pat Cummins", "role": "Bowler/All-rounder", "risk_level": "Medium"},
+        {"id": 10, "name": "Brydon Carse", "role": "Bowler", "risk_level": "High"},
+        {"id": 11, "name": "Harsh Dubey", "role": "Bowler", "risk_level": "High"},
+        {"id": 12, "name": "Kamindu Mendis", "role": "All-rounder", "risk_level": "Medium"},
+        {"id": 13, "name": "Umran Malik", "role": "Bowler", "risk_level": "High"}
+      ]
+    }
+  ]
+}

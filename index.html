@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#060810">
+<title>AI Fantasy Cricket Team Generator — 20 Unique Teams | IPL 2026, Dream11</title>
+<meta name="description" content="Generate 20 unique AI-powered fantasy cricket teams instantly for IPL 2026, T20 World Cup, ICC tournaments and Dream11. Smart Safe/Balanced/Risky modes, captain rotation, exposure control. 100% free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9904803540658016" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJS4H89EKW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VJS4H89EKW');</script>
+<style>
+:root {
+  --bg:#060810; --s1:#0b0e1c; --s2:#0f1220; --s3:#131728; --s4:#181c30; --s5:#1e2238;
+  --brd:#1d2140; --brd2:#2a3060; --brd3:#374070;
+  --gld:#f5c842; --gld2:#d4a212; --gld3:#fad96a; --gld-glow:rgba(245,200,66,.15); --gld-dim:rgba(245,200,66,.08);
+  --ora:#ff7043; --grn:#00e5a0; --blu:#4db8ff; --red:#ff4d6d; --pur:#a78bfa; --cyn:#22d3ee;
+  --txt:#e2e8f8; --txt2:#8896b8; --txt3:#4a5578; --txt4:#2d3555;
+  --r:14px; --r2:10px; --r3:8px;
+  --shadow:0 8px 32px rgba(0,0,0,.6); --shadow2:0 2px 12px rgba(0,0,0,.4);
+  --glow-gld:0 0 30px rgba(245,200,66,.12),0 0 60px rgba(245,200,66,.06);
+  --hdr-h:58px; --step-h:52px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;overflow-x:hidden;font-size:15px;line-height:1.65;}
+body.has-steps{padding-top:calc(var(--hdr-h) + var(--step-h));}
+body.no-steps{padding-top:var(--hdr-h);}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -5%,rgba(245,200,66,.05),transparent 60%),
+  radial-gradient(ellipse 40% 30% at 85% 110%,rgba(77,184,255,.04),transparent 50%),
+  linear-gradient(rgba(255,255,255,.008) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.008) 1px,transparent 1px);
+  background-size:100%,100%,56px 56px,56px 56px;}
+.z1{position:relative;z-index:1;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--s1);}
+::-webkit-scrollbar-thumb{background:var(--brd3);border-radius:3px;}
+header{position:fixed;top:0;left:0;right:0;z-index:900;height:var(--hdr-h);
+  background:rgba(6,8,16,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--brd);display:flex;align-items:center;padding:0 32px;}
+.logo-wrap{display:flex;align-items:center;}
+.logo{font-family:'Barlow Condensed',sans-serif;font-size:1.25rem;font-weight:800;letter-spacing:2px;white-space:nowrap;
+  background:linear-gradient(135deg,var(--gld3) 0%,var(--gld) 40%,var(--ora) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;cursor:pointer;}
+.hdr-nav{margin-left:auto;display:flex;gap:4px;align-items:center;flex-wrap:wrap;}
+.hdr-nav a{color:var(--txt2);text-decoration:none;font-size:.78rem;font-weight:500;padding:6px 11px;border-radius:8px;border:1px solid transparent;transition:all .18s;letter-spacing:.2px;cursor:pointer;}
+.hdr-nav a:hover{color:var(--txt);background:var(--s2);border-color:var(--brd);}
+.hdr-nav a.cta{background:linear-gradient(135deg,var(--gld),var(--gld2));color:#000;border-color:transparent;font-weight:700;letter-spacing:.8px;margin-left:8px;padding:7px 16px;}
+.hdr-nav a.cta:hover{box-shadow:0 4px 16px var(--gld-glow);transform:translateY(-1px);}
+.hdr-nav a.active{color:var(--gld);}
+.step-bar{position:fixed;top:var(--hdr-h);left:0;right:0;z-index:850;height:var(--step-h);
+  background:rgba(11,14,28,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--brd);
+  display:flex;align-items:center;justify-content:center;padding:0 32px;}
+.step-bar-inner{display:flex;align-items:center;width:100%;max-width:680px;}
+.step{display:flex;align-items:center;gap:8px;flex:1;}
+.step-num{width:26px;height:26px;border-radius:50%;border:2px solid var(--brd2);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:800;color:var(--txt3);flex-shrink:0;transition:all .3s;}
+.step-lbl{font-size:.7rem;color:var(--txt3);transition:color .3s;white-space:nowrap;font-weight:500;}
+.step-line{flex:1;height:1px;background:var(--brd);margin:0 6px;transition:background .3s;}
+.step.done .step-num{background:var(--grn);border-color:var(--grn);color:#000;}
+.step.done .step-lbl{color:var(--grn);}
+.step.done .step-line{background:var(--grn);}
+.step.active .step-num{background:var(--gld);border-color:var(--gld);color:#000;box-shadow:0 0 0 3px rgba(245,200,66,.22),0 0 14px rgba(245,200,66,.18);}
+.step.active .step-lbl{color:var(--gld);font-weight:600;}
+.wrap{max-width:1200px;margin:0 auto;padding:26px 20px 90px;}
+.wrap-narrow{max-width:880px;margin:0 auto;padding:36px 20px 90px;}
+.hero{text-align:center;padding:64px 20px 48px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 40%,rgba(245,200,66,.07),transparent 70%);pointer-events:none;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,200,66,.1);border:1px solid rgba(245,200,66,.25);border-radius:100px;padding:6px 18px;font-size:.72rem;font-weight:700;color:var(--gld);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;letter-spacing:2px;line-height:1.08;margin-bottom:16px;}
+.hero h1 span{background:linear-gradient(135deg,var(--gld3),var(--gld),var(--ora));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero p{font-size:1.05rem;color:var(--txt2);max-width:620px;margin:0 auto 28px;line-height:1.7;}
+.hero-stats{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:32px;}
+.hero-stat{text-align:center;}
+.hero-stat strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:800;color:var(--gld);}
+.hero-stat span{font-size:.72rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.8px;}
+.sh{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gld);margin-bottom:16px;display:flex;align-items:center;gap:12px;}
+.sh::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--brd2),transparent);}
+.sh small{font-size:.62rem;color:var(--txt3);letter-spacing:1px;font-weight:400;}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:1.5px;margin-bottom:10px;}
+.section-sub{color:var(--txt2);font-size:.92rem;line-height:1.7;margin-bottom:28px;max-width:700px;}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-bottom:32px;}
+.feature-card{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);padding:22px 18px;transition:all .22s;position:relative;overflow:hidden;}
+.feature-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gld),transparent);opacity:0;transition:opacity .22s;}
+.feature-card:hover{border-color:rgba(245,200,66,.35);transform:translateY(-3px);box-shadow:var(--shadow);}
+.feature-card:hover::before{opacity:1;}
+.feat-icon{font-size:2rem;margin-bottom:12px;}
+.feat-title{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:800;letter-spacing:1px;margin-bottom:6px;}
+.feat-desc{font-size:.78rem;color:var(--txt3);line-height:1.55;}
+.prose{color:var(--txt2);line-height:1.8;}
+.prose h2{font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:800;letter-spacing:1.5px;color:var(--txt);margin:36px 0 12px;}
+.prose h2:first-child{margin-top:0;}
+.prose h3{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:700;letter-spacing:.8px;color:var(--txt);margin:24px 0 8px;}
+.prose p{margin-bottom:14px;font-size:.92rem;}
+.prose ul,.prose ol{padding-left:1.6em;margin-bottom:14px;}
+.prose li{margin-bottom:6px;font-size:.92rem;}
+.prose strong{color:var(--txt);font-weight:600;}
+.prose a{color:var(--gld);text-decoration:none;}
+.prose a:hover{text-decoration:underline;}
+.prose .highlight{background:rgba(245,200,66,.07);border:1px solid rgba(245,200,66,.18);border-radius:var(--r3);padding:16px 18px;margin:18px 0;}
+.prose .highlight h4{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:800;letter-spacing:1px;color:var(--gld);margin-bottom:8px;}
+.prose blockquote{border-left:3px solid var(--gld);padding:10px 18px;background:var(--gld-dim);border-radius:0 8px 8px 0;margin:18px 0;font-style:italic;color:var(--txt2);}
+.tab-bar{display:flex;gap:3px;background:var(--s1);border:1px solid var(--brd);border-radius:11px;padding:4px;width:fit-content;margin-bottom:20px;}
+.tab-btn{padding:7px 18px;border-radius:8px;border:none;background:transparent;color:var(--txt3);font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s;letter-spacing:.3px;}
+.tab-btn.active{background:var(--s3);color:var(--txt);border:1px solid var(--brd2);box-shadow:var(--shadow2);}
+.match-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:10px;margin-bottom:26px;}
+.match-card{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);padding:16px 18px 14px;cursor:pointer;transition:all .22s;position:relative;overflow:hidden;}
+.match-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(245,200,66,.04),transparent 60%);opacity:0;transition:opacity .22s;}
+.match-card:hover{border-color:rgba(245,200,66,.45);transform:translateY(-3px);box-shadow:var(--shadow);}
+.match-card:hover::before{opacity:1;}
+.match-card.selected{border-color:var(--gld);background:var(--gld-dim);box-shadow:0 0 0 1px var(--gld),var(--shadow);}
+.match-time{position:absolute;top:10px;right:10px;background:rgba(245,200,66,.1);border:1px solid rgba(245,200,66,.2);color:var(--gld);font-size:.58rem;font-weight:700;padding:2px 8px;border-radius:100px;letter-spacing:.8px;}
+.match-id-tag{font-size:.6rem;color:var(--txt3);letter-spacing:.8px;text-transform:uppercase;margin-bottom:8px;}
+.match-vs{font-family:'Barlow Condensed',sans-serif;font-size:1.45rem;font-weight:800;letter-spacing:1px;text-align:center;line-height:1.1;}
+.match-vs em{color:var(--gld);font-style:normal;margin:0 8px;font-size:.85rem;font-weight:400;}
+.match-venue{font-size:.63rem;color:var(--txt3);text-align:center;margin-top:6px;}
+.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:26px;}
+.mode-card{border-radius:var(--r);padding:22px 16px;text-align:center;cursor:pointer;border:2px solid transparent;transition:all .25s;position:relative;overflow:hidden;}
+.mode-card.safe{background:linear-gradient(145deg,#04110d,#051410);border-color:rgba(0,229,160,.18);}
+.mode-card.balanced{background:linear-gradient(145deg,#040f1e,#060f1e);border-color:rgba(77,184,255,.18);}
+.mode-card.risky{background:linear-gradient(145deg,#130408,#170508);border-color:rgba(255,77,109,.18);}
+.mode-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.mode-card.active.safe{border-color:var(--grn);box-shadow:0 0 40px rgba(0,229,160,.12);}
+.mode-card.active.balanced{border-color:var(--blu);box-shadow:0 0 40px rgba(77,184,255,.12);}
+.mode-card.active.risky{border-color:var(--red);box-shadow:0 0 40px rgba(255,77,109,.12);}
+.mode-icon{font-size:2rem;margin-bottom:9px;}
+.mode-name{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:800;letter-spacing:2px;}
+.mode-card.safe .mode-name{color:var(--grn);}
+.mode-card.balanced .mode-name{color:var(--blu);}
+.mode-card.risky .mode-name{color:var(--red);}
+.mode-desc{font-size:.7rem;color:var(--txt3);margin-top:5px;line-height:1.5;}
+.mode-note{font-size:.62rem;margin-top:8px;padding:3px 10px;border-radius:6px;display:inline-block;font-weight:700;letter-spacing:.5px;}
+.mode-card.safe .mode-note{background:rgba(0,229,160,.1);color:var(--grn);}
+.mode-card.balanced .mode-note{background:rgba(77,184,255,.1);color:var(--blu);}
+.mode-card.risky .mode-note{background:rgba(255,77,109,.1);color:var(--red);}
+.adv-section{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);overflow:hidden;margin-bottom:24px;}
+.adv-header{background:var(--s1);border-bottom:1px solid var(--brd);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;}
+.adv-header-title{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:1.5px;color:var(--txt);}
+.adv-header-arrow{color:var(--gld);transition:transform .25s;font-size:1.1rem;}
+.adv-header-arrow.open{transform:rotate(180deg);}
+.adv-body{padding:20px;}
+.adv-group{margin-bottom:22px;}
+.adv-group:last-child{margin-bottom:0;}
+.adv-group-title{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:2px;color:var(--txt3);text-transform:uppercase;margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:8px;}
+.adv-group-title span{background:var(--s3);border:1px solid var(--brd2);border-radius:5px;padding:1px 8px;font-size:.6rem;color:var(--gld);letter-spacing:.8px;}
+.crit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:7px;}
+.crit-item{background:var(--s3);border:1px solid var(--brd);border-radius:var(--r3);padding:9px 13px;display:flex;align-items:flex-start;gap:10px;cursor:pointer;transition:border-color .16s,background .16s;user-select:none;}
+.crit-item:hover{border-color:rgba(245,200,66,.35);background:var(--s4);}
+.crit-item input[type="checkbox"]{accent-color:var(--gld);width:15px;height:15px;flex-shrink:0;cursor:pointer;margin-top:2px;}
+.crit-label{font-size:.73rem;color:var(--txt);cursor:pointer;line-height:1.4;}
+.crit-label small{display:block;color:var(--txt3);font-size:.62rem;margin-top:1px;}
+.input-row{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:18px;}
+.input-group{flex:1;min-width:130px;display:flex;flex-direction:column;gap:6px;}
+.input-group label{font-size:.63rem;color:var(--txt3);letter-spacing:1px;text-transform:uppercase;font-weight:600;}
+.input-group input,.input-group select{background:var(--s3);border:1px solid var(--brd);border-radius:var(--r3);padding:9px 12px;color:var(--txt);font-size:.83rem;font-family:'DM Sans',sans-serif;width:100%;transition:border-color .18s;outline:none;}
+.input-group input:focus,.input-group select:focus{border-color:rgba(245,200,66,.5);box-shadow:0 0 0 3px rgba(245,200,66,.07);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 24px;border-radius:var(--r3);border:none;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:1px;text-decoration:none;transition:all .22s;white-space:nowrap;position:relative;overflow:hidden;}
+.btn::after{content:'';position:absolute;inset:0;opacity:0;background:rgba(255,255,255,.08);transition:opacity .2s;}
+.btn:hover::after{opacity:1;}
+.btn-gold{background:linear-gradient(135deg,var(--gld3),var(--gld),var(--gld2));color:#000;box-shadow:0 4px 18px rgba(245,200,66,.22);}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,200,66,.3);}
+.btn-ora{background:linear-gradient(135deg,#ff7043,#d43200);color:#fff;box-shadow:0 4px 18px rgba(255,112,67,.25);}
+.btn-ora:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,112,67,.35);}
+.btn-grn{background:linear-gradient(135deg,var(--grn),#00b87a);color:#000;box-shadow:0 4px 18px rgba(0,229,160,.2);}
+.btn-grn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,229,160,.3);}
+.btn-ghost{background:transparent;color:var(--txt3);border:1px solid var(--brd);}
+.btn-ghost:hover{border-color:var(--brd3);color:var(--txt);}
+.btn-row{display:flex;gap:11px;flex-wrap:wrap;margin-bottom:30px;align-items:center;}
+.btn-lg{padding:14px 32px;font-size:1.1rem;border-radius:11px;letter-spacing:1.5px;}
+.btn-xl{padding:16px 40px;font-size:1.2rem;border-radius:12px;letter-spacing:2px;}
+.pill{padding:3px 12px;border-radius:100px;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;border:1px solid transparent;}
+.pill-safe{background:rgba(0,229,160,.1);color:var(--grn);border-color:rgba(0,229,160,.2);}
+.pill-balanced{background:rgba(77,184,255,.1);color:var(--blu);border-color:rgba(77,184,255,.2);}
+.pill-risky{background:rgba(255,77,109,.1);color:var(--red);border-color:rgba(255,77,109,.2);}
+.pill-neutral{background:var(--s3);color:var(--txt3);border-color:var(--brd);}
+.stats-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;}
+.stat-chip{background:var(--s2);border:1px solid var(--brd);border-radius:11px;padding:10px 18px;text-align:center;flex:1;min-width:80px;}
+.stat-chip strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;color:var(--gld);line-height:1;}
+.stat-chip span{font-size:.6rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px;display:block;}
+.res-topbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px;}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:14px;}
+.team-card{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);overflow:hidden;position:relative;transition:border-color .2s,transform .22s,box-shadow .22s;}
+.team-card:hover{border-color:var(--brd3);transform:translateY(-2px);box-shadow:var(--shadow);}
+.team-hdr{background:linear-gradient(135deg,var(--s3),var(--s1));padding:11px 15px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--brd);}
+.team-num{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:800;color:var(--gld);letter-spacing:2px;}
+.badge{font-size:.58rem;font-weight:700;padding:3px 9px;border-radius:100px;letter-spacing:.8px;text-transform:uppercase;}
+.badge-free{background:var(--grn);color:#000;}
+.badge-lock{background:var(--s5);color:var(--txt3);border:1px solid var(--brd2);}
+.cv-row{display:flex;gap:7px;padding:11px 13px 0;}
+.cv-pill{flex:1;background:var(--s3);border:1px solid var(--brd);border-radius:var(--r3);padding:7px 9px;text-align:center;}
+.cv-lbl{display:block;font-size:.56rem;color:var(--txt3);letter-spacing:.4px;text-transform:uppercase;font-weight:600;margin-bottom:2px;}
+.cv-nm{font-size:.76rem;font-weight:700;display:block;line-height:1.25;}
+.cv-c .cv-nm{color:var(--gld);}
+.cv-vc .cv-nm{color:var(--blu);}
+.plist{list-style:none;padding:9px 13px 0;}
+.pitem{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px solid rgba(30,34,56,.8);font-size:.74rem;}
+.pitem:last-child{border-bottom:none;}
+.rdot{width:5px;height:5px;border-radius:50%;flex-shrink:0;}
+.d-bat{background:var(--blu);}
+.d-bowl{background:var(--ora);}
+.d-ar{background:var(--grn);}
+.d-wk{background:var(--gld);}
+.pname{flex:1;color:var(--txt);}
+.ct{color:var(--gld);font-size:.6rem;font-weight:800;margin-left:3px;}
+.vct{color:var(--blu);font-size:.6rem;font-weight:800;margin-left:3px;}
+.rtag{font-size:.58rem;font-weight:700;padding:1px 6px;border-radius:5px;flex-shrink:0;}
+.rL{background:rgba(0,229,160,.1);color:var(--grn);}
+.rM{background:rgba(77,184,255,.1);color:var(--blu);}
+.rH{background:rgba(255,77,109,.1);color:var(--red);}
+.card-foot{padding:9px 13px;border-top:1px solid var(--brd);margin-top:9px;display:flex;justify-content:space-between;align-items:center;}
+.foot-info{font-size:.62rem;color:var(--txt3);}
+.copy-btn{background:none;border:1px solid var(--brd);color:var(--txt3);font-size:.67rem;padding:4px 11px;border-radius:6px;cursor:pointer;transition:all .18s;font-family:'DM Sans',sans-serif;font-weight:500;}
+.copy-btn:hover:not(:disabled){border-color:var(--gld);color:var(--gld);}
+.copy-btn:disabled{opacity:.22;cursor:default;}
+.match-strip{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);padding:16px 22px;margin-bottom:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.strip-vs{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:1.5px;line-height:1;}
+.strip-vs em{color:var(--gld);font-style:normal;margin:0 10px;font-size:.85rem;font-weight:400;}
+.strip-venue{font-size:.65rem;color:var(--txt3);margin-top:3px;}
+.strip-right{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.lock-ov{position:absolute;inset:0;background:rgba(6,8,16,.88);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:var(--r);z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;transition:opacity .45s ease;}
+.lock-ico{font-size:1.8rem;}
+.lock-lbl{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:800;letter-spacing:2px;color:var(--txt3);}
+.lock-sub{font-size:.62rem;color:var(--txt3);}
+.unlock-banner{grid-column:1/-1;background:linear-gradient(135deg,rgba(20,15,2,.95),rgba(28,20,4,.95));border:2px solid rgba(245,200,66,.3);border-radius:16px;padding:28px 32px;text-align:center;position:relative;overflow:hidden;}
+.unlock-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(245,200,66,.07),transparent 70%);pointer-events:none;}
+.unlock-count{display:inline-block;background:rgba(245,200,66,.12);border:1px solid rgba(245,200,66,.28);border-radius:100px;padding:4px 16px;font-size:.68rem;color:var(--gld);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;position:relative;}
+.unlock-banner h3{font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:800;letter-spacing:2px;color:var(--gld);margin-bottom:6px;position:relative;}
+.unlock-banner>p{color:var(--txt3);font-size:.8rem;margin-bottom:18px;position:relative;line-height:1.6;}
+.unlock-perks{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:18px;position:relative;}
+.unlock-perk{font-size:.7rem;color:var(--txt2);display:flex;align-items:center;gap:5px;}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.96);z-index:9000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .28s;}
+.modal-bg.open{opacity:1;pointer-events:all;}
+.modal-box{background:var(--s2);border:2px solid rgba(245,200,66,.3);border-radius:18px;padding:36px 40px;max-width:420px;width:94%;text-align:center;transform:scale(.94) translateY(16px);transition:transform .28s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden;}
+.modal-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gld),var(--ora),var(--gld));}
+.modal-bg.open .modal-box{transform:scale(1) translateY(0);}
+.modal-box h2{font-family:'Barlow Condensed',sans-serif;font-size:1.65rem;font-weight:800;letter-spacing:2px;color:var(--gld);margin-bottom:6px;}
+.modal-box>p{color:var(--txt3);font-size:.8rem;margin-bottom:18px;line-height:1.6;}
+.ad-box{background:var(--s1);border:2px dashed var(--brd2);border-radius:13px;padding:24px 20px;margin:0 0 16px;}
+.ad-icon{font-size:2.6rem;margin-bottom:8px;}
+.ad-label{font-size:.85rem;color:var(--txt2);font-weight:600;}
+.ad-sub{font-size:.68rem;color:var(--txt3);margin-top:3px;}
+.ad-prog{height:7px;background:var(--brd);border-radius:100px;overflow:hidden;margin-top:16px;}
+.ad-bar{height:100%;border-radius:100px;width:0%;background:linear-gradient(90deg,var(--ora),var(--gld));transition:width .15s linear;box-shadow:0 0 8px rgba(245,200,66,.4);}
+.ad-tmr{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:800;color:var(--ora);margin-top:11px;letter-spacing:1.5px;}
+.modal-close-note{font-size:.67rem;color:var(--txt3);margin-top:10px;}
+.toast{position:fixed;bottom:24px;right:24px;z-index:9999;padding:11px 20px;border-radius:11px;font-size:.8rem;font-weight:600;transform:translateY(56px);opacity:0;transition:all .3s cubic-bezier(.34,1.56,.64,1);pointer-events:none;box-shadow:var(--shadow);max-width:300px;}
+.toast.show{transform:translateY(0);opacity:1;}
+.spinner-overlay{position:fixed;inset:0;background:rgba(6,8,16,.95);z-index:8000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;opacity:0;pointer-events:none;transition:opacity .25s;}
+.spinner-overlay.active{opacity:1;pointer-events:all;}
+.spinner{width:54px;height:54px;border:4px solid var(--brd2);border-top-color:var(--gld);border-radius:50%;animation:spin .85s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.spinner-text{font-family:'Barlow Condensed',sans-serif;font-size:1.35rem;font-weight:800;letter-spacing:2px;color:var(--gld);}
+.spinner-sub{font-size:.76rem;color:var(--txt3);}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-bottom:32px;}
+.blog-card{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);overflow:hidden;transition:all .22s;text-decoration:none;display:block;cursor:pointer;}
+.blog-card:hover{border-color:rgba(245,200,66,.4);transform:translateY(-3px);box-shadow:var(--shadow);}
+.blog-card-img{height:140px;background:linear-gradient(135deg,var(--s3),var(--s1));display:flex;align-items:center;justify-content:center;font-size:3rem;border-bottom:1px solid var(--brd);}
+.blog-card-body{padding:18px;}
+.blog-tag{font-size:.6rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gld);margin-bottom:8px;display:block;}
+.blog-card-title{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:.5px;color:var(--txt);margin-bottom:8px;line-height:1.25;}
+.blog-card-excerpt{font-size:.78rem;color:var(--txt3);line-height:1.55;}
+.blog-card-meta{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:.65rem;color:var(--txt3);}
+.blog-article-header{background:linear-gradient(135deg,var(--s2),var(--s1));border:1px solid var(--brd);border-radius:var(--r);padding:32px 36px;margin-bottom:32px;}
+.blog-article-header .blog-tag{font-size:.7rem;margin-bottom:12px;}
+.blog-article-header h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;letter-spacing:1px;line-height:1.1;margin-bottom:12px;}
+.blog-article-header .meta{font-size:.75rem;color:var(--txt3);display:flex;gap:16px;flex-wrap:wrap;}
+.faq-item{background:var(--s2);border:1px solid var(--brd);border-radius:11px;margin-bottom:8px;overflow:hidden;}
+.faq-q{padding:14px 17px;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--txt);display:flex;justify-content:space-between;align-items:center;transition:background .18s;gap:12px;}
+.faq-q:hover{background:var(--s3);}
+.faq-q .arrow{color:var(--gld);font-size:1rem;transition:transform .22s;flex-shrink:0;}
+.faq-q.open .arrow{transform:rotate(180deg);}
+.faq-a{padding:0 17px;max-height:0;overflow:hidden;transition:max-height .32s ease,padding .32s;font-size:.85rem;color:var(--txt2);line-height:1.75;}
+.faq-a.open{max-height:600px;padding:0 17px 16px;}
+.strategy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0 24px;}
+.strategy-card{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);padding:20px 16px;}
+.strategy-card h4{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:800;margin-bottom:8px;letter-spacing:1px;}
+.strategy-card p{font-size:.78rem;color:var(--txt3);line-height:1.55;margin:0;}
+.strat-safe{border-top:3px solid var(--grn);}
+.strat-safe h4{color:var(--grn);}
+.strat-balanced{border-top:3px solid var(--blu);}
+.strat-balanced h4{color:var(--blu);}
+.strat-risky{border-top:3px solid var(--red);}
+.strat-risky h4{color:var(--red);}
+.tips-box{background:rgba(0,229,160,.05);border:1px solid rgba(0,229,160,.18);border-radius:var(--r);padding:20px 22px;margin:20px 0;}
+.tips-box h4{font-family:'Barlow Condensed',sans-serif;color:var(--grn);font-size:1rem;letter-spacing:1px;margin-bottom:12px;}
+.tips-box ul{color:var(--txt2);font-size:.85rem;margin:0;padding-left:1.4em;}
+.tips-box li{margin-bottom:6px;}
+.warn-box{background:rgba(255,112,67,.05);border:1px solid rgba(255,112,67,.2);border-radius:var(--r);padding:18px 20px;margin:18px 0;}
+.warn-box h4{font-family:'Barlow Condensed',sans-serif;color:var(--ora);font-size:.9rem;letter-spacing:1px;margin-bottom:10px;}
+.warn-box p{font-size:.82rem;color:var(--txt2);margin:0;}
+.divider{height:1px;background:var(--brd);margin:28px 0;}
+.chip-picker{background:var(--s3);border:1px solid var(--brd);border-radius:var(--r3);padding:12px;min-height:90px;}
+.chip-placeholder{font-size:.73rem;color:var(--txt3);font-style:italic;}
+.chip-team-lbl{font-size:.6rem;font-weight:700;color:var(--txt3);letter-spacing:1.2px;text-transform:uppercase;margin:10px 0 6px;}
+.chip-team-lbl:first-child{margin-top:0;}
+.chip-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:4px;}
+.pchip{display:inline-flex;align-items:center;gap:6px;background:var(--s4);border:1px solid var(--brd2);border-radius:7px;padding:5px 11px;cursor:pointer;transition:all .16s;font-family:'DM Sans',sans-serif;user-select:none;}
+.pchip:hover{border-color:rgba(245,200,66,.5);background:var(--gld-dim);}
+.pchip--active{background:var(--gld-dim);border-color:var(--gld);box-shadow:0 0 0 1px var(--gld);}
+.pchip--active-excl{background:rgba(255,77,109,.12);border-color:var(--red);box-shadow:0 0 0 1px var(--red);}
+.pchip-name{font-size:.73rem;color:var(--txt);font-weight:500;line-height:1;}
+.pchip-role{font-size:.58rem;color:var(--txt3);background:var(--s1);border-radius:4px;padding:1px 6px;}
+.pchip--active .pchip-name{color:var(--gld);}
+.pchip--active .pchip-role{color:var(--gld);background:rgba(245,200,66,.1);}
+.pchip--active-excl .pchip-name{color:var(--red);}
+.pchip--active-excl .pchip-role{color:var(--red);background:rgba(255,77,109,.1);}
+.chip-summary{font-size:.7rem;margin-top:8px;min-height:18px;line-height:1.5;}
+.alert-sel{background:rgba(245,200,66,.06);border:1px solid rgba(245,200,66,.2);border-radius:var(--r3);padding:10px 14px;font-size:.8rem;color:var(--txt2);margin-bottom:16px;display:none;line-height:1.5;}
+.age-gate-overlay{position:fixed;inset:0;z-index:99999;background:rgba(4,5,12,.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:center;padding:20px;}
+.age-gate-box{background:var(--s2);border:1px solid var(--brd2);border-radius:20px;padding:44px 40px 36px;max-width:420px;width:100%;text-align:center;position:relative;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.7);animation:fadeUp .35s ease both;}
+.age-gate-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gld3),var(--gld),var(--ora));}
+.age-gate-badge{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,rgba(245,200,66,.15),rgba(245,200,66,.05));border:2px solid rgba(245,200,66,.3);font-size:1.9rem;margin-bottom:18px;}
+.age-gate-box h2{font-family:'Barlow Condensed',sans-serif;font-size:1.75rem;font-weight:800;letter-spacing:2px;color:var(--txt);margin-bottom:8px;}
+.age-gate-box p{font-size:.85rem;color:var(--txt3);line-height:1.65;margin-bottom:24px;}
+.age-gate-btn-row{display:flex;gap:12px;justify-content:center;}
+.age-gate-yes{flex:1;padding:14px 20px;border:none;border-radius:11px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:1.5px;transition:all .22s;background:linear-gradient(135deg,var(--gld3),var(--gld),var(--gld2));color:#000;box-shadow:0 6px 22px rgba(245,200,66,.3);}
+.age-gate-yes:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(245,200,66,.45);}
+.age-gate-no{padding:14px 20px;border:1px solid var(--brd2);border-radius:11px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:600;letter-spacing:1px;transition:all .2s;background:transparent;color:var(--txt3);min-width:90px;}
+.age-gate-no:hover{border-color:var(--red);color:var(--red);}
+.age-gate-note{font-size:.65rem;color:var(--txt4);margin-top:16px;line-height:1.5;}
+.age-gate-blocked{position:fixed;inset:0;z-index:99999;background:rgba(4,5,12,.99);display:none;align-items:center;justify-content:center;flex-direction:column;gap:14px;text-align:center;padding:28px;}
+.age-gate-blocked h3{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:800;letter-spacing:2px;color:var(--red);}
+.age-gate-blocked p{color:var(--txt3);font-size:.85rem;max-width:340px;}
+.success-banner{background:linear-gradient(135deg,rgba(0,229,160,.08),rgba(0,229,160,.04));border-bottom:1px solid rgba(0,229,160,.18);padding:12px 28px;display:flex;align-items:center;gap:14px;font-size:.82rem;color:var(--txt2);}
+.success-banner strong{color:var(--grn);display:block;font-size:.88rem;margin-bottom:1px;}
+.success-sub{font-size:.73rem;color:var(--txt3);}
+.legal-wrap{max-width:820px;margin:0 auto;padding:42px 22px 90px;}
+.legal-wrap h1{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:800;letter-spacing:3px;color:var(--gld);margin-bottom:6px;}
+.legal-wrap .last-updated{font-size:.7rem;color:var(--txt3);margin-bottom:28px;}
+.legal-wrap h2{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;color:var(--txt);margin:24px 0 8px;}
+.legal-wrap p{font-size:.85rem;color:var(--txt2);line-height:1.75;margin-bottom:12px;}
+.legal-wrap ul{font-size:.85rem;color:var(--txt2);line-height:1.75;padding-left:1.5em;margin-bottom:12px;}
+.legal-wrap li{margin-bottom:4px;}
+.legal-wrap a{color:var(--gld);text-decoration:none;cursor:pointer;}
+.contact-form{display:flex;flex-direction:column;gap:15px;max-width:560px;}
+.form-group{display:flex;flex-direction:column;gap:6px;}
+.form-group label{font-size:.7rem;color:var(--txt3);letter-spacing:1px;text-transform:uppercase;font-weight:600;}
+.form-group input,.form-group textarea,.form-group select{background:var(--s2);border:1px solid var(--brd);border-radius:var(--r3);padding:10px 13px;color:var(--txt);font-size:.85rem;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .18s;}
+.form-group input:focus,.form-group textarea:focus{border-color:rgba(245,200,66,.5);box-shadow:0 0 0 3px rgba(245,200,66,.07);}
+.form-group textarea{resize:vertical;min-height:120px;}
+footer{background:var(--s1);border-top:1px solid var(--brd);padding:36px 28px 24px;margin-top:64px;}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin-bottom:24px;}
+.footer-col h4{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:800;letter-spacing:1.5px;color:var(--gld);margin-bottom:10px;}
+.footer-col p,.footer-col a{font-size:.74rem;color:var(--txt3);display:block;margin-bottom:5px;text-decoration:none;transition:color .18s;line-height:1.6;cursor:pointer;}
+.footer-col a:hover{color:var(--txt);}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:18px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{font-size:.68rem;color:var(--txt3);}
+.footer-disclaimer{font-size:.67rem;color:var(--txt3);line-height:1.6;max-width:1200px;margin:16px auto 0;text-align:center;}
+.footer-trust{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;}
+.trust-badge{background:var(--s2);border:1px solid var(--brd);border-radius:8px;padding:5px 13px;font-size:.65rem;color:var(--txt3);letter-spacing:.5px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+.fade-up{animation:fadeUp .38s ease both;}
+.skip-link{position:absolute;top:-50px;left:18px;z-index:9999;background:var(--gld);color:#000;padding:8px 18px;border-radius:0 0 9px 9px;font-size:.82rem;font-weight:700;text-decoration:none;transition:top .2s;}
+.skip-link:focus{top:0;}
+:focus-visible{outline:2px solid var(--gld);outline-offset:2px;border-radius:4px;}
+@media(max-width:768px){
+  :root{--hdr-h:52px;--step-h:44px;}
+  body{font-size:14px;}
+  header{padding:0 14px;}
+  .logo{font-size:1.05rem;}
+  .hdr-nav a:not(.cta):not(.active){display:none;}
+  .step-lbl{display:none;}
+  .step-line{margin:0 4px;}
+  .step-bar{padding:0 12px;}
+  .wrap{padding:14px 12px 60px;}
+  .wrap-narrow{padding:20px 14px 60px;}
+  .match-grid{grid-template-columns:1fr;}
+  .mode-grid{grid-template-columns:1fr;gap:8px;}
+  .team-grid{grid-template-columns:1fr;}
+  .blog-grid{grid-template-columns:1fr;}
+  .strategy-grid{grid-template-columns:1fr;}
+  .feature-grid{grid-template-columns:1fr;}
+  .btn-xl{padding:13px 22px;font-size:1rem;}
+  .btn-row{flex-direction:column;gap:8px;}
+  .btn-row .btn{width:100%;justify-content:center;}
+  .match-strip{flex-direction:column;gap:10px;}
+  .strip-right{margin-left:0;}
+  .hero{padding:40px 16px 32px;}
+  .hero-stats{gap:20px;}
+  .adv-body{padding:14px;}
+  .input-row{flex-direction:column;gap:10px;}
+  .crit-grid{grid-template-columns:1fr;}
+  .modal-box{padding:22px 16px;margin:0 10px;}
+  .footer-grid{grid-template-columns:1fr;gap:18px;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+  .blog-article-header{padding:20px;}
+  .age-gate-box{padding:30px 20px 24px;}
+  .age-gate-btn-row{flex-direction:column;}
+  .age-gate-yes,.age-gate-no{width:100%;}
+  .two-col{grid-template-columns:1fr!important;}
+}
+@media(max-width:380px){
+  .logo{font-size:.92rem;}
+  .match-vs{font-size:1.05rem;}
+}
+@media print{
+  header,.step-bar,.unlock-banner,.btn,.copy-btn,.lock-ov,.modal-bg,.toast,footer,.spinner-overlay{display:none!important;}
+  body{background:#fff;color:#000;padding-top:0;}
+  .team-card{border:1px solid #ccc;break-inside:avoid;background:#fff;}
+  .pname{color:#000;}
+  .cv-nm{color:#b8860b!important;}
+}
+.page{display:none;}
+.page.active{display:block;}
+</style>
+</head>
+<body class="no-steps" id="appBody">
+
+<!-- AGE GATE -->
+<div class="age-gate-overlay" id="ageGate" role="dialog" aria-modal="true">
+  <div class="age-gate-box">
+    <div class="age-gate-badge">🔞</div>
+    <h2>Age Verification</h2>
+    <p>FantasyXI AI contains fantasy sports content. You must be 18 years or older to continue.</p>
+    <p style="font-weight:600;color:var(--txt);font-size:.9rem;">Are you 18 years or older?</p>
+    <div class="age-gate-btn-row">
+      <button class="age-gate-yes" onclick="ageConfirm(true)">✓ Yes, I'm 18+</button>
+      <button class="age-gate-no" onclick="ageConfirm(false)">No</button>
+    </div>
+    <p class="age-gate-note">By clicking "Yes, I'm 18+", you confirm you are of legal age in your jurisdiction.</p>
+  </div>
+</div>
+<div class="age-gate-blocked" id="ageBlocked">
+  <h3>Access Restricted</h3>
+  <p>You must be 18 years or older to use FantasyXI AI.</p>
+</div>
+
+<!-- SPINNER -->
+<div class="spinner-overlay" id="spinnerOverlay" role="status" aria-live="polite">
+  <div class="spinner"></div>
+  <div class="spinner-text">Generating Teams…</div>
+  <div class="spinner-sub">Running smart AI distribution engine</div>
+</div>
+
+<!-- AD MODAL -->
+<div class="modal-bg" id="adModal" aria-modal="true" role="dialog" aria-labelledby="adModalTitle">
+  <div class="modal-box">
+    <h2 id="adModalTitle">📺 Quick Ad</h2>
+    <p>Watch this 5-second ad to unlock all remaining teams — completely free.</p>
+    <div class="ad-box">
+      <div class="ad-icon">🎬</div>
+      <div class="ad-label">Advertisement</div>
+      <div class="ad-sub">5 seconds · No payment required</div>
+      <div class="ad-prog"><div class="ad-bar" id="adBar"></div></div>
+      <div class="ad-tmr" id="adTmr">⏳ 5s remaining</div>
+    </div>
+    <p class="modal-close-note" id="closeNote">Please wait — your teams are almost ready…</p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<header role="banner">
+  <div class="logo-wrap">
+    <span class="logo" onclick="navigate('home')">⚡ FantasyXI AI</span>
+  </div>
+  <nav class="hdr-nav" aria-label="Main navigation" id="mainNav">
+    <a onclick="navigate('home')" data-page="home">Generator</a>
+    <a onclick="navigate('guide')" data-page="guide">Cricket Guide</a>
+    <a onclick="navigate('strategy')" data-page="strategy">Strategy</a>
+    <a onclick="navigate('blog')" data-page="blog">Blog</a>
+    <a onclick="navigate('about')" data-page="about">About</a>
+    <a onclick="navigate('home')" class="cta">🤖 Generate Teams</a>
+  </nav>
+</header>
+
+<div class="step-bar" id="stepBarWrap" style="display:none;">
+  <div class="step-bar-inner">
+    <div class="step" id="step1"><div class="step-num">1</div><span class="step-lbl">Select Match</span><div class="step-line"></div></div>
+    <div class="step" id="step2"><div class="step-num">2</div><span class="step-lbl">Choose Mode</span><div class="step-line"></div></div>
+    <div class="step" id="step3"><div class="step-num">3</div><span class="step-lbl">Set Criteria</span><div class="step-line"></div></div>
+    <div class="step" id="step4"><div class="step-num">4</div><span class="step-lbl">Generate</span></div>
+  </div>
+</div>
+
+<div id="app">
+
+<!-- PAGE: HOME -->
+<div id="page-home" class="page active">
+<main id="main">
+<section class="hero z1">
+  <div class="hero-badge">🤖 AI-Powered · Free · Instant</div>
+  <h1>Generate <span>20 Unique</span><br>Fantasy Cricket Teams</h1>
+  <p>India's smartest AI fantasy team generator for IPL 2026, Dream11 and all major cricket tournaments. Safe, Balanced, and Risky modes — zero duplicates, guaranteed.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <button class="btn btn-gold btn-xl" onclick="scrollToId('tool')">🤖 Start Generating Free →</button>
+    <button class="btn btn-ghost btn-lg" onclick="navigate('guide')">📖 Learn How It Works</button>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>20</strong><span>AI Teams</span></div>
+    <div class="hero-stat"><strong>3</strong><span>Game Modes</span></div>
+    <div class="hero-stat"><strong>0</strong><span>Duplicates</span></div>
+    <div class="hero-stat"><strong>100%</strong><span>Free</span></div>
+  </div>
+</section>
+
+<section class="wrap z1" style="padding-top:0;padding-bottom:0;">
+  <div class="feature-grid">
+    <div class="feature-card"><div class="feat-icon">🤖</div><div class="feat-title">AI Algorithm</div><div class="feat-desc">Multi-layer probability weighting with risk-adjusted player sampling and intelligent C/VC rotation.</div></div>
+    <div class="feature-card"><div class="feat-icon">🛡</div><div class="feat-title">Safe / Balanced / Risky</div><div class="feat-desc">Three AI modes tailored for small leagues, mid-size contests, and IPL mega grand leagues.</div></div>
+    <div class="feature-card"><div class="feat-icon">🔒</div><div class="feat-title">Lock & Exclude</div><div class="feat-desc">Lock must-have players to appear in every team or exclude players you don't trust.</div></div>
+    <div class="feature-card"><div class="feat-icon">📊</div><div class="feat-title">Exposure Control</div><div class="feat-desc">Set player exposure limits so no single pick dominates your entire portfolio.</div></div>
+    <div class="feature-card"><div class="feat-icon">🎯</div><div class="feat-title">Differential Injection</div><div class="feat-desc">Automatically boosts low-ownership differential picks in your last 10 teams.</div></div>
+    <div class="feature-card"><div class="feat-icon">📄</div><div class="feat-title">PDF Export</div><div class="feat-desc">Download all 20 teams as a clean, formatted PDF for offline reference and entry.</div></div>
+  </div>
+</section>
+
+<section class="wrap z1" id="tool">
+  <div class="tab-bar" role="tablist">
+    <button class="tab-btn active" onclick="showTab('up',this)" role="tab" aria-selected="true">📅 Upcoming Matches</button>
+    <button class="tab-btn" onclick="showTab('man',this)" role="tab" aria-selected="false">⚙ Manual Selection</button>
+  </div>
+
+  <div id="tab-up">
+    <h2 class="sh">Select a Match <small>Step 1</small></h2>
+    <div class="match-grid" id="matchGrid" role="list">
+      <div style="color:var(--txt3);font-size:.85rem;padding:20px;">Loading matches…</div>
+    </div>
+    <div class="alert-sel" id="selInfo" role="status"></div>
+  </div>
+
+  <div id="tab-man" style="display:none;">
+    <div class="sh">Manual Team Selection</div>
+    <div class="input-row">
+      <div class="input-group"><label for="mt1">Team 1</label><select id="mt1"></select></div>
+      <div class="input-group"><label for="mt2">Team 2</label><select id="mt2"></select></div>
+    </div>
+    <button class="btn btn-ghost" onclick="setManual()">Confirm Teams →</button>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2 class="sh" id="section-mode">AI Generation Mode <small>Step 2</small></h2>
+  <div class="mode-grid" role="radiogroup">
+    <div class="mode-card safe" role="radio" aria-checked="false" tabindex="0" onclick="selectMode('safe',this)" onkeydown="if(event.key==='Enter'||event.key===' ')selectMode('safe',this)">
+      <div class="mode-icon">🛡</div><div class="mode-name">Safe</div>
+      <div class="mode-desc">Low-risk captains · Consistent picks · Minimise variance</div>
+      <div class="mode-note">✓ Best for H2H &amp; small leagues</div>
+    </div>
+    <div class="mode-card balanced" role="radio" aria-checked="false" tabindex="0" onclick="selectMode('balanced',this)" onkeydown="if(event.key==='Enter'||event.key===' ')selectMode('balanced',this)">
+      <div class="mode-icon">⚖️</div><div class="mode-name">Balanced</div>
+      <div class="mode-desc">Mixed risk · Smart C/VC rotation · Best of both worlds</div>
+      <div class="mode-note">✓ Best for mid-size contests</div>
+    </div>
+    <div class="mode-card risky" role="radio" aria-checked="false" tabindex="0" onclick="selectMode('risky',this)" onkeydown="if(event.key==='Enter'||event.key===' ')selectMode('risky',this)">
+      <div class="mode-icon">🔥</div><div class="mode-name">Risky</div>
+      <div class="mode-desc">High-risk differentials · Max ceiling · Stand out from field</div>
+      <div class="mode-note">✓ Best for IPL mega contests</div>
+    </div>
+  </div>
+
+  <div class="btn-row" style="margin-top:6px;margin-bottom:10px;">
+    <button class="btn btn-gold btn-xl" id="generateBtn" onclick="doGenerate()">🤖 Generate AI Teams</button>
+    <button class="btn btn-ghost" onclick="resetAll()">↺ Reset All</button>
+  </div>
+
+  <h2 class="sh">Advanced Criteria <small>Step 3 · Optional</small></h2>
+  <div class="adv-section">
+    <div class="adv-header" onclick="toggleAdv(this)" role="button" aria-expanded="true">
+      <span class="adv-header-title">⚙️ Configuration Engine — Power Options</span>
+      <span class="adv-header-arrow open">▼</span>
+    </div>
+    <div class="adv-body" id="advBody">
+      <div class="adv-group">
+        <div class="adv-group-title">⚙️ Generation Settings <span>CORE</span></div>
+        <div class="input-row">
+          <div class="input-group"><label for="nt">Teams to Generate (max 20)</label><input type="number" id="nt" value="20" min="5" max="20"></div>
+          <div class="input-group"><label for="max_from_one">Max Players from One Team</label><input type="number" id="max_from_one" value="7" min="5" max="10"></div>
+        </div>
+        <div class="input-row">
+          <div class="input-group"><label>Exposure Limit (%) <span style="color:var(--gld);font-weight:700;" id="exposureVal">75%</span></label><input type="range" id="exposure" value="75" min="10" max="100" oninput="document.getElementById('exposureVal').textContent=this.value+'%'"></div>
+          <div class="input-group"><label>Risk Intensity <span style="color:var(--gld);font-weight:700;" id="riskIntVal">1.0×</span></label><input type="range" id="risk_intensity" value="10" min="5" max="25" oninput="document.getElementById('riskIntVal').textContent=(this.value/10).toFixed(1)+'×'"></div>
+          <div class="input-group"><label>Randomisation <span style="color:var(--gld);font-weight:700;" id="randVal">Medium</span></label><input type="range" id="rand_strength" value="5" min="0" max="10" oninput="document.getElementById('randVal').textContent=['Off','Very Low','Low','Low-Med','Medium','Medium','Med-High','High','High','Very High','Max'][this.value]"></div>
+        </div>
+      </div>
+      <div class="adv-group">
+        <div class="adv-group-title">👑 Captain &amp; Vice-Captain Rules <span>STRATEGY</span></div>
+        <div class="crit-grid">
+          <label class="crit-item"><input type="checkbox" id="c6" checked><div class="crit-label">At least 5 unique C/VC combinations<small>Ensures diversity</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="c7" checked><div class="crit-label">Avoid same C/VC pair repeating<small>No duplicate combos</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="c8" checked><div class="crit-label">Risk-based captain weighting<small>Mode affects captain pool</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="c11" checked><div class="crit-label">Prevent same captain &gt;3 consecutive<small>Rotates captain intelligently</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="c15" checked><div class="crit-label">≥1 All-rounder captain in first 5<small>Guaranteed AR captaincy</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="unique_cap"><div class="crit-label">Unique captain per team<small>No captain repeats</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="unique_vc"><div class="crit-label">Unique vice-captain per team<small>No VC repeats</small></div></label>
+        </div>
+      </div>
+      <div class="adv-group">
+        <div class="adv-group-title">🏏 Team Composition <span>STRUCTURE</span></div>
+        <div class="crit-grid">
+          <label class="crit-item"><input type="checkbox" id="c1" checked><div class="crit-label">6:5 team-split rotation<small>Alternates which team has 6</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="c12" checked><div class="crit-label">No identical combination<small>100% unique teams</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="c13" checked><div class="crit-label">Max players from one team<small>Uses setting above</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="c14" checked><div class="crit-label">Role constraints (WK/BAT/AR/BOWL)<small>Valid fantasy composition</small></div></label>
+          <label class="crit-item"><input type="checkbox" id="differential"><div class="crit-label">Differential injection (last 10 teams)<small>Boosts low-ownership picks</small></div></label>
+        </div>
+        <div class="input-row" style="margin-top:14px;margin-bottom:0;">
+          <div class="input-group"><label>Min Differential Players per Team</label><input type="number" id="min_diff" value="0" min="0" max="5"></div>
+        </div>
+      </div>
+      <div class="adv-group">
+        <div class="adv-group-title">🎯 Player Controls — Lock &amp; Exclude <span>PRECISION</span></div>
+        <p style="font-size:.72rem;color:var(--txt3);margin-bottom:14px;">Select a match first. Click chip to <strong style="color:var(--grn);">lock</strong> or <strong style="color:var(--red);">exclude</strong>.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;" class="two-col">
+          <div>
+            <div style="font-size:.68rem;font-weight:700;color:var(--grn);letter-spacing:.9px;text-transform:uppercase;margin-bottom:8px;">🔒 Lock Players</div>
+            <div id="lock_picker" class="chip-picker"><span class="chip-placeholder">Select a match first</span></div>
+            <div id="lock_summary" class="chip-summary"></div>
+          </div>
+          <div>
+            <div style="font-size:.68rem;font-weight:700;color:var(--red);letter-spacing:.9px;text-transform:uppercase;margin-bottom:8px;">🚫 Exclude Players</div>
+            <div id="excl_picker" class="chip-picker"><span class="chip-placeholder">Select a match first</span></div>
+            <div id="excl_summary" class="chip-summary"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap-narrow z1" style="padding-top:8px;">
+  <h2 class="sh">What is Fantasy Cricket? <small>Complete Guide</small></h2>
+  <article class="prose">
+    <h2>Understanding Fantasy Cricket — A Complete Beginner's Guide</h2>
+    <p>Fantasy cricket is an online sports game where participants create virtual teams composed of real-life cricket players. Your virtual team earns points based on the actual statistical performance of those players in real matches.</p>
+    <h2>How Fantasy Cricket Scoring Works</h2>
+    <div class="highlight">
+      <h4>📊 Standard Dream11 T20 Scoring</h4>
+      <ul>
+        <li><strong>Batting:</strong> +1 per run, +1 boundary bonus, +2 six bonus, +8 fifty, +16 century, -2 duck</li>
+        <li><strong>Bowling:</strong> +25 per wicket, +8 maiden, +8 3WK bonus, +16 5WK bonus</li>
+        <li><strong>Fielding:</strong> +8 catch, +12 stumping, +12 direct run-out, +6 indirect run-out</li>
+        <li><strong>Captain:</strong> 2× all points · <strong>Vice-Captain:</strong> 1.5× all points</li>
+      </ul>
+    </div>
+    <h2>Captain and Vice-Captain Strategy</h2>
+    <blockquote>Winning fantasy cricket isn't about picking the best 11 players — it's about picking the right captain.</blockquote>
+    <h2>How to Use the AI Fantasy Team Generator</h2>
+    <ol>
+      <li><strong>Select your match</strong> from upcoming IPL 2026 fixtures, or manually input two teams.</li>
+      <li><strong>Choose your mode:</strong> Safe, Balanced, or Risky.</li>
+      <li><strong>Configure advanced settings</strong> (optional): lock players, exclude injury doubts, set exposure.</li>
+      <li><strong>Click Generate AI Teams.</strong> Up to 20 unique teams instantly.</li>
+      <li><strong>Review and copy</strong> teams, or export all as PDF.</li>
+    </ol>
+    <div class="tips-box">
+      <h4>💡 Expert Tips to Win Dream11 Grand Leagues</h4>
+      <ul>
+        <li>Set exposure limit to 70–80% for portfolio diversity</li>
+        <li>Enable differential injection for the last 10 teams</li>
+        <li>Lock 2–3 core players you're confident about</li>
+        <li>Use Risky mode for mega contests (50,000+ entries)</li>
+        <li>Always check the pitch report and weather before generating</li>
+      </ul>
+    </div>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is the AI Fantasy Team Generator completely free? <span class="arrow">▼</span></div><div class="faq-a">Yes, completely free. The first 3 AI-generated teams are always immediately visible. The remaining teams unlock by watching one short 5-second simulated advertisement.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Which tournaments does the generator support? <span class="arrow">▼</span></div><div class="faq-a">FantasyXI AI supports IPL 2026 and all major cricket tournaments. Use the Manual Selection tab for any match not listed.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Are AI-generated teams guaranteed to win? <span class="arrow">▼</span></div><div class="faq-a">No. FantasyXI AI is an informational and entertainment tool. Performance depends entirely on real match outcomes which are inherently unpredictable. Please play responsibly.</div></div>
+  </article>
+</section>
+</main>
+</div>
+
+<!-- PAGE: RESULTS -->
+<div id="page-results" class="page">
+  <div class="success-banner z1" role="status" id="resultsBanner">
+    <span>✅</span>
+    <div>
+      <strong id="resultsBannerTitle">Teams Generated!</strong>
+      <span class="success-sub" id="resultsBannerSub"></span>
+    </div>
+  </div>
+  <main class="wrap z1">
+    <div id="resultsContent"></div>
+  </main>
+</div>
+
+<!-- PAGE: GUIDE -->
+<div id="page-guide" class="page">
+<main id="main-guide">
+<section class="wrap-narrow">
+  <div class="blog-article-header">
+    <span class="blog-tag">📖 Complete Guide</span>
+    <h1>Fantasy Cricket Guide — Everything You Need to Know</h1>
+    <div class="meta"><span>📅 Updated March 2026</span><span>⏱ 12 min read</span><span>👤 FantasyXI Team</span></div>
+  </div>
+  <article class="prose">
+    <h2>What is Fantasy Cricket?</h2>
+    <p>Fantasy cricket is an online strategy game where you build a virtual team of real cricket players and earn points based on their actual match-day performance.</p>
+    <div class="highlight">
+      <h4>📊 Dream11 T20 Scoring — Key Rules</h4>
+      <ul>
+        <li><strong>Batting:</strong> +1 per run, +1 boundary, +2 six, +8 fifty, +16 century, -2 duck</li>
+        <li><strong>Bowling:</strong> +25 per wicket, +8 maiden, +8 3WK bonus, +16 5WK bonus</li>
+        <li><strong>Fielding:</strong> +8 catch, +12 stumping, +12 direct run-out, +6 indirect</li>
+        <li><strong>Captain:</strong> 2× ALL points · <strong>Vice-Captain:</strong> 1.5× ALL points</li>
+      </ul>
+    </div>
+    <h2>Team Composition Rules</h2>
+    <ul>
+      <li>1–4 Wicketkeeper-Batsmen · 3–6 Batsmen · 1–4 All-rounders · 3–6 Bowlers</li>
+      <li>Maximum 7 players from one team</li>
+    </ul>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is fantasy cricket legal in India? <span class="arrow">▼</span></div><div class="faq-a">Yes. Fantasy sports involving skill are legal in most Indian states. However, some states have restrictions. Always check local laws before participating in paid contests.</div></div>
+    <div style="margin-top:32px;text-align:center;">
+      <button class="btn btn-gold btn-xl" onclick="navigate('home')">🤖 Generate Your AI Teams Now →</button>
+    </div>
+  </article>
+</section>
+</main>
+</div>
+
+<!-- PAGE: STRATEGY -->
+<div id="page-strategy" class="page">
+<main>
+<section class="wrap-narrow">
+  <div class="blog-article-header">
+    <span class="blog-tag">🏆 Dream11 Strategy</span>
+    <h1>Dream11 Strategy Guide — Win More With Smart Fantasy Cricket</h1>
+    <div class="meta"><span>📅 Updated March 2026</span><span>⏱ 10 min read</span></div>
+  </div>
+  <article class="prose">
+    <h2>The Fundamentals of Dream11 Strategy</h2>
+    <div class="highlight">
+      <h4>🎯 Contest Selection Framework</h4>
+      <ul>
+        <li><strong>H2H (2 players):</strong> Safe teams. Win rate target: 55%+.</li>
+        <li><strong>Small (2–50 players):</strong> Balanced teams.</li>
+        <li><strong>Grand (5,000+):</strong> Risky mode. Multiple entries essential.</li>
+      </ul>
+    </div>
+    <div class="strategy-grid">
+      <div class="strategy-card strat-safe"><h4>🛡 Safe Mode</h4><p>Low-risk players weighted 5×. Best for H2H and small leagues.</p></div>
+      <div class="strategy-card strat-balanced"><h4>⚖️ Balanced Mode</h4><p>Equal weighting. Best for mid-size contests of 50–5,000 entries.</p></div>
+      <div class="strategy-card strat-risky"><h4>🔥 Risky Mode</h4><p>High-risk players weighted 6×. For IPL mega grand leagues only.</p></div>
+    </div>
+    <div style="margin-top:32px;text-align:center;">
+      <button class="btn btn-gold btn-xl" onclick="navigate('home')">🤖 Generate AI Teams in Seconds →</button>
+    </div>
+  </article>
+</section>
+</main>
+</div>
+
+<!-- PAGE: BLOG LIST -->
+<div id="page-blog" class="page">
+<main>
+<section class="wrap">
+  <div style="margin-bottom:28px;">
+    <div class="hero-badge">📝 Expert Articles</div>
+    <h1 class="section-title" style="margin-top:14px;">Fantasy Cricket Blog</h1>
+    <p class="section-sub">Expert guides, proven strategies, and in-depth analysis.</p>
+  </div>
+  <div class="blog-grid" id="blogGrid"></div>
+</section>
+</main>
+</div>
+
+<!-- PAGE: BLOG POST -->
+<div id="page-blogpost" class="page">
+<main>
+<section class="wrap-narrow">
+  <div id="blogPostContent"></div>
+</section>
+</main>
+</div>
+
+<!-- PAGE: ABOUT -->
+<div id="page-about" class="page">
+<main><div class="legal-wrap">
+  <h1>About FantasyXI AI</h1><p class="last-updated">India's #1 AI Fantasy Cricket Team Generator</p>
+  <h2>Our Mission</h2><p>FantasyXI AI was built to democratise professional-grade fantasy cricket strategy. Generate 20 optimised, unique Dream11 teams in seconds.</p>
+  <h2>Disclaimer</h2><p>FantasyXI AI is an independent informational tool. Not affiliated with Dream11, MyTeam11, ICC, BCCI, or any official cricket body. Fantasy sports involve financial risk — play responsibly. 18+ only.</p>
+  <p>Questions? <a onclick="navigate('contact')">Contact us</a>.</p>
+</div></main>
+</div>
+
+<!-- PAGE: CONTACT -->
+<div id="page-contact" class="page">
+<main><div class="legal-wrap">
+  <h1>Contact Us</h1><p class="last-updated">We respond within 48 business hours.</p>
+  <form class="contact-form" id="contactForm" onsubmit="submitContactForm(event)" novalidate>
+    <div class="form-group"><label for="cf-name">Name *</label><input type="text" id="cf-name" placeholder="Your name" required></div>
+    <div class="form-group"><label for="cf-email">Email *</label><input type="email" id="cf-email" placeholder="you@example.com" required></div>
+    <div class="form-group"><label for="cf-subject">Subject</label><select id="cf-subject"><option>General Enquiry</option><option>Bug Report</option><option>Feature Request</option><option>Other</option></select></div>
+    <div class="form-group"><label for="cf-msg">Message *</label><textarea id="cf-msg" placeholder="Your message..." required></textarea></div>
+    <button type="submit" class="btn btn-gold btn-lg">Send Message →</button>
+  </form>
+  <div id="formMsg" style="display:none;background:rgba(0,229,160,.08);border:1px solid rgba(0,229,160,.25);border-radius:8px;padding:13px 16px;font-size:.82rem;color:#00e5a0;margin-top:16px;">✅ Thank you! We'll get back to you within 48 hours.</div>
+</div></main>
+</div>
+
+<!-- PAGE: PRIVACY -->
+<div id="page-privacy" class="page">
+<main><div class="legal-wrap">
+  <h1>Privacy Policy</h1><p class="last-updated">Last updated: March 2026</p>
+  <h2>Information We Collect</h2><ul><li>Log Data: IP addresses, browser type, pages visited.</li><li>Cookies: We and advertising partners (Google AdSense) use cookies.</li></ul>
+  <h2>Children's Privacy</h2><p>This site is for users 18+.</p>
+</div></main>
+</div>
+
+<!-- PAGE: TERMS -->
+<div id="page-terms" class="page">
+<main><div class="legal-wrap">
+  <h1>Terms &amp; Conditions</h1><p class="last-updated">Last updated: March 2026</p>
+  <h2>Age Restriction</h2><p>18+ only.</p>
+  <h2>No Guarantee</h2><p>FantasyXI AI is an informational and entertainment tool only. We make no guarantee of winnings.</p>
+</div></main>
+</div>
+
+<!-- PAGE: DISCLAIMER -->
+<div id="page-disclaimer" class="page">
+<main><div class="legal-wrap">
+  <h1>Disclaimer</h1><p class="last-updated">Last updated: March 2026</p>
+  <p>All content on FantasyXI AI is for general informational and entertainment purposes only. Fantasy sports involve financial risk. 18+ only.</p>
+</div></main>
+</div>
+
+</div><!-- /app -->
+
+<footer id="siteFooter">
+  <div class="footer-grid z1">
+    <div class="footer-col">
+      <h4>⚡ FantasyXI AI</h4>
+      <p>India's #1 AI Fantasy Cricket Team Generator. 20 unique teams for IPL 2026 and all major tournaments — in seconds.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Generator</h4>
+      <a onclick="navigate('home')">🤖 AI Team Generator</a>
+      <a onclick="navigate('guide')">📖 Cricket Guide</a>
+      <a onclick="navigate('strategy')">🏆 Dream11 Strategy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Blog</h4>
+      <a onclick="navigate('blog')">📝 All Articles</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a onclick="navigate('about')">ℹ️ About Us</a>
+      <a onclick="navigate('contact')">✉️ Contact</a>
+      <a onclick="navigate('privacy')">🔒 Privacy Policy</a>
+      <a onclick="navigate('terms')">📋 Terms &amp; Conditions</a>
+      <a onclick="navigate('disclaimer')">⚠️ Disclaimer</a>
+    </div>
+  </div>
+  <div class="footer-trust z1">
+    <span class="trust-badge">🔒 Privacy First</span>
+    <span class="trust-badge">🚫 No Login Required</span>
+    <span class="trust-badge">⚡ Instant Generation</span>
+    <span class="trust-badge">📊 Smart AI Algorithm</span>
+    <span class="trust-badge">🆓 Free to Use</span>
+  </div>
+  <div class="footer-bottom z1">
+    <p>© 2026 FantasyXI AI. All rights reserved. Not affiliated with ICC, BCCI, Dream11, or any official cricket body.</p>
+    <p>For entertainment &amp; informational purposes only.</p>
+  </div>
+  <div class="footer-disclaimer z1">
+    ⚠️ Fantasy sports involve financial risk. Please play responsibly. FantasyXI AI does not guarantee any winnings.
+    This tool is for users 18 years and above only.
+  </div>
+</footer>
+
+<script>
+// ============================================================
+// ✅ FIX: INLINE EMBEDDED DATA — No fetch() needed
+// This solves the "Failed to fetch" error when opening via file://
+// ============================================================
+var INLINE_MATCHES = {"tournament":"TATA IPL 2026","matches":[{"match_id":"IPL_01","date":"2026-03-28","time":"07:30 PM IST","venue":"M. Chinnaswamy Stadium, Bengaluru","team1":"Royal Challengers Bengaluru","team2":"Sunrisers Hyderabad"},{"match_id":"IPL_02","date":"2026-03-29","time":"07:30 PM IST","venue":"Wankhede Stadium, Mumbai","team1":"Mumbai Indians","team2":"Kolkata Knight Riders"},{"match_id":"IPL_03","date":"2026-03-30","time":"07:30 PM IST","venue":"ACA Stadium, Guwahati","team1":"Rajasthan Royals","team2":"Chennai Super Kings"},{"match_id":"IPL_04","date":"2026-03-31","time":"07:30 PM IST","venue":"PCA International Cricket Stadium, New Chandigarh","team1":"Punjab Kings","team2":"Gujarat Titans"},{"match_id":"IPL_05","date":"2026-04-01","time":"07:30 PM IST","venue":"BRSABV Ekana Cricket Stadium, Lucknow","team1":"Lucknow Super Giants","team2":"Delhi Capitals"},{"match_id":"IPL_06","date":"2026-04-02","time":"07:30 PM IST","venue":"Eden Gardens, Kolkata","team1":"Kolkata Knight Riders","team2":"Sunrisers Hyderabad"},{"match_id":"IPL_07","date":"2026-04-03","time":"07:30 PM IST","venue":"MA Chidambaram Stadium, Chennai","team1":"Chennai Super Kings","team2":"Punjab Kings"},{"match_id":"IPL_08","date":"2026-04-04","time":"03:30 PM IST","venue":"Arun Jaitley Stadium, Delhi","team1":"Delhi Capitals","team2":"Mumbai Indians"},{"match_id":"IPL_09","date":"2026-04-04","time":"07:30 PM IST","venue":"Narendra Modi Stadium, Ahmedabad","team1":"Gujarat Titans","team2":"Rajasthan Royals"},{"match_id":"IPL_10","date":"2026-04-05","time":"03:30 PM IST","venue":"Rajiv Gandhi International Stadium, Hyderabad","team1":"Sunrisers Hyderabad","team2":"Lucknow Super Giants"},{"match_id":"IPL_11","date":"2026-04-05","time":"07:30 PM IST","venue":"M. Chinnaswamy Stadium, Bengaluru","team1":"Royal Challengers Bengaluru","team2":"Chennai Super Kings"},{"match_id":"IPL_12","date":"2026-04-06","time":"07:30 PM IST","venue":"Eden Gardens, Kolkata","team1":"Kolkata Knight Riders","team2":"Punjab Kings"},{"match_id":"IPL_13","date":"2026-04-07","time":"07:30 PM IST","venue":"ACA Stadium, Guwahati","team1":"Rajasthan Royals","team2":"Mumbai Indians"},{"match_id":"IPL_14","date":"2026-04-08","time":"07:30 PM IST","venue":"Arun Jaitley Stadium, Delhi","team1":"Delhi Capitals","team2":"Gujarat Titans"},{"match_id":"IPL_15","date":"2026-04-09","time":"07:30 PM IST","venue":"Eden Gardens, Kolkata","team1":"Kolkata Knight Riders","team2":"Lucknow Super Giants"},{"match_id":"IPL_16","date":"2026-04-10","time":"07:30 PM IST","venue":"ACA Stadium, Guwahati","team1":"Rajasthan Royals","team2":"Royal Challengers Bengaluru"},{"match_id":"IPL_17","date":"2026-04-11","time":"03:30 PM IST","venue":"PCA International Cricket Stadium, New Chandigarh","team1":"Punjab Kings","team2":"Sunrisers Hyderabad"},{"match_id":"IPL_18","date":"2026-04-11","time":"07:30 PM IST","venue":"MA Chidambaram Stadium, Chennai","team1":"Chennai Super Kings","team2":"Delhi Capitals"},{"match_id":"IPL_19","date":"2026-04-12","time":"03:30 PM IST","venue":"BRSABV Ekana Cricket Stadium, Lucknow","team1":"Lucknow Super Giants","team2":"Gujarat Titans"},{"match_id":"IPL_20","date":"2026-04-12","time":"07:30 PM IST","venue":"Wankhede Stadium, Mumbai","team1":"Mumbai Indians","team2":"Royal Challengers Bengaluru"}]};
+
+var INLINE_TEAMS = {"IPL_2026_Squads":[{"team":"Chennai Super Kings","abbr":"CSK","players":[{"id":"CSK_1","name":"Ruturaj Gaikwad","role":"Batsman","risk_level":"Low"},{"id":"CSK_2","name":"Sanju Samson","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"CSK_3","name":"Shivam Dube","role":"All-rounder","risk_level":"Low"},{"id":"CSK_4","name":"Dewald Brevis","role":"Batsman","risk_level":"Medium"},{"id":"CSK_5","name":"MS Dhoni","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"CSK_6","name":"Ayush Mhatre","role":"Batsman","risk_level":"High"},{"id":"CSK_7","name":"Noor Ahmad","role":"Bowler","risk_level":"Low"},{"id":"CSK_8","name":"Nathan Ellis","role":"Bowler","risk_level":"Medium"},{"id":"CSK_9","name":"Matt Henry","role":"Bowler","risk_level":"Medium"},{"id":"CSK_10","name":"Khaleel Ahmed","role":"Bowler","risk_level":"Low"},{"id":"CSK_11","name":"Mukesh Choudhary","role":"Bowler","risk_level":"Medium"}]},{"team":"Mumbai Indians","abbr":"MI","players":[{"id":"MI_1","name":"Rohit Sharma","role":"Batsman","risk_level":"Low"},{"id":"MI_2","name":"Quinton de Kock","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"MI_3","name":"Suryakumar Yadav","role":"Batsman","risk_level":"Low"},{"id":"MI_4","name":"Tilak Varma","role":"Batsman","risk_level":"Low"},{"id":"MI_5","name":"Hardik Pandya","role":"All-rounder","risk_level":"Medium"},{"id":"MI_6","name":"Will Jacks","role":"All-rounder","risk_level":"Medium"},{"id":"MI_7","name":"Naman Dhir","role":"All-rounder","risk_level":"High"},{"id":"MI_8","name":"Shardul Thakur","role":"All-rounder","risk_level":"Medium"},{"id":"MI_9","name":"Jasprit Bumrah","role":"Bowler","risk_level":"Low"},{"id":"MI_10","name":"Trent Boult","role":"Bowler","risk_level":"Low"},{"id":"MI_11","name":"Mitchell Santner","role":"All-rounder","risk_level":"Low"}]},{"team":"Royal Challengers Bengaluru","abbr":"RCB","players":[{"id":"RCB_1","name":"Virat Kohli","role":"Batsman","risk_level":"Low"},{"id":"RCB_2","name":"Phil Salt","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"RCB_3","name":"Venkatesh Iyer","role":"All-rounder","risk_level":"Medium"},{"id":"RCB_4","name":"Rajat Patidar","role":"Batsman","risk_level":"Low"},{"id":"RCB_5","name":"Jitesh Sharma","role":"Wicketkeeper-Batsman","risk_level":"Medium"},{"id":"RCB_6","name":"Tim David","role":"Batsman","risk_level":"Low"},{"id":"RCB_7","name":"Romario Shepherd","role":"All-rounder","risk_level":"Medium"},{"id":"RCB_8","name":"Krunal Pandya","role":"All-rounder","risk_level":"Low"},{"id":"RCB_9","name":"Bhuvneshwar Kumar","role":"Bowler","risk_level":"Medium"},{"id":"RCB_10","name":"Josh Hazlewood","role":"Bowler","risk_level":"Low"},{"id":"RCB_11","name":"Yash Dayal","role":"Bowler","risk_level":"Medium"}]},{"team":"Delhi Capitals","abbr":"DC","players":[{"id":"DC_1","name":"KL Rahul","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"DC_2","name":"Prithvi Shaw","role":"Batsman","risk_level":"High"},{"id":"DC_3","name":"Nitish Rana","role":"Batsman","risk_level":"Medium"},{"id":"DC_4","name":"David Miller","role":"Batsman","risk_level":"Low"},{"id":"DC_5","name":"Tristan Stubbs","role":"Batsman","risk_level":"Low"},{"id":"DC_6","name":"Axar Patel","role":"All-rounder","risk_level":"Low"},{"id":"DC_7","name":"Ashutosh Sharma","role":"All-rounder","risk_level":"Medium"},{"id":"DC_8","name":"Mitchell Starc","role":"Bowler","risk_level":"Medium"},{"id":"DC_9","name":"Kuldeep Yadav","role":"Bowler","risk_level":"Low"},{"id":"DC_10","name":"T Natarajan","role":"Bowler","risk_level":"Low"},{"id":"DC_11","name":"Mukesh Kumar","role":"Bowler","risk_level":"Medium"}]},{"team":"Kolkata Knight Riders","abbr":"KKR","players":[{"id":"KKR_1","name":"Ajinkya Rahane","role":"Batsman","risk_level":"Medium"},{"id":"KKR_2","name":"Finn Allen","role":"Wicketkeeper-Batsman","risk_level":"High"},{"id":"KKR_3","name":"Angkrish Raghuvanshi","role":"Batsman","risk_level":"Medium"},{"id":"KKR_4","name":"Cameron Green","role":"All-rounder","risk_level":"Low"},{"id":"KKR_5","name":"Rinku Singh","role":"Batsman","risk_level":"Low"},{"id":"KKR_6","name":"Sunil Narine","role":"All-rounder","risk_level":"Low"},{"id":"KKR_7","name":"Ramandeep Singh","role":"All-rounder","risk_level":"Medium"},{"id":"KKR_8","name":"Varun Chakravarthy","role":"Bowler","risk_level":"Low"},{"id":"KKR_9","name":"Harshit Rana","role":"Bowler","risk_level":"Medium"},{"id":"KKR_10","name":"Matheesha Pathirana","role":"Bowler","risk_level":"Medium"},{"id":"KKR_11","name":"Vaibhav Arora","role":"Bowler","risk_level":"Medium"}]},{"team":"Punjab Kings","abbr":"PBKS","players":[{"id":"PBKS_1","name":"Prabhsimran Singh","role":"Wicketkeeper-Batsman","risk_level":"Medium"},{"id":"PBKS_2","name":"Priyansh Arya","role":"Batsman","risk_level":"High"},{"id":"PBKS_3","name":"Shreyas Iyer","role":"Batsman","risk_level":"Low"},{"id":"PBKS_4","name":"Nehal Wadhera","role":"Batsman","risk_level":"Medium"},{"id":"PBKS_5","name":"Shashank Singh","role":"Batsman","risk_level":"Low"},{"id":"PBKS_6","name":"Marcus Stoinis","role":"All-rounder","risk_level":"Medium"},{"id":"PBKS_7","name":"Marco Jansen","role":"All-rounder","risk_level":"Medium"},{"id":"PBKS_8","name":"Arshdeep Singh","role":"Bowler","risk_level":"Low"},{"id":"PBKS_9","name":"Yuzvendra Chahal","role":"Bowler","risk_level":"Low"},{"id":"PBKS_10","name":"Azmatullah Omarzai","role":"All-rounder","risk_level":"Medium"},{"id":"PBKS_11","name":"Harpreet Brar","role":"Bowler","risk_level":"Low"}]},{"team":"Gujarat Titans","abbr":"GT","players":[{"id":"GT_1","name":"Shubman Gill","role":"Batsman","risk_level":"Low"},{"id":"GT_2","name":"Jos Buttler","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"GT_3","name":"Sai Sudharsan","role":"Batsman","risk_level":"Low"},{"id":"GT_4","name":"Glenn Phillips","role":"All-rounder","risk_level":"Medium"},{"id":"GT_5","name":"Shahrukh Khan","role":"Batsman","risk_level":"Medium"},{"id":"GT_6","name":"Rahul Tewatia","role":"All-rounder","risk_level":"Low"},{"id":"GT_7","name":"Rashid Khan","role":"All-rounder","risk_level":"Low"},{"id":"GT_8","name":"Washington Sundar","role":"All-rounder","risk_level":"Low"},{"id":"GT_9","name":"Kagiso Rabada","role":"Bowler","risk_level":"Low"},{"id":"GT_10","name":"Mohammed Siraj","role":"Bowler","risk_level":"Low"},{"id":"GT_11","name":"Prasidh Krishna","role":"Bowler","risk_level":"High"}]},{"team":"Rajasthan Royals","abbr":"RR","players":[{"id":"RR_1","name":"Yashasvi Jaiswal","role":"Batsman","risk_level":"Low"},{"id":"RR_2","name":"Dhruv Jurel","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"RR_3","name":"Riyan Parag","role":"All-rounder","risk_level":"Medium"},{"id":"RR_4","name":"Ravindra Jadeja","role":"All-rounder","risk_level":"Low"},{"id":"RR_5","name":"Shimron Hetmyer","role":"Batsman","risk_level":"Low"},{"id":"RR_6","name":"Sam Curran","role":"All-rounder","risk_level":"Medium"},{"id":"RR_7","name":"Jofra Archer","role":"Bowler","risk_level":"High"},{"id":"RR_8","name":"Ravi Bishnoi","role":"Bowler","risk_level":"Low"},{"id":"RR_9","name":"Sandeep Sharma","role":"Bowler","risk_level":"Medium"},{"id":"RR_10","name":"Tushar Deshpande","role":"Bowler","risk_level":"Medium"},{"id":"RR_11","name":"Kwena Maphaka","role":"Bowler","risk_level":"High"}]},{"team":"Lucknow Super Giants","abbr":"LSG","players":[{"id":"LSG_1","name":"Rishabh Pant","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"LSG_2","name":"Nicholas Pooran","role":"Batsman","risk_level":"Low"},{"id":"LSG_3","name":"Aiden Markram","role":"Batsman","risk_level":"Low"},{"id":"LSG_4","name":"Mitchell Marsh","role":"All-rounder","risk_level":"High"},{"id":"LSG_5","name":"Ayush Badoni","role":"Batsman","risk_level":"Medium"},{"id":"LSG_6","name":"Shahbaz Ahmed","role":"All-rounder","risk_level":"Medium"},{"id":"LSG_7","name":"Mohammed Shami","role":"Bowler","risk_level":"Medium"},{"id":"LSG_8","name":"Mayank Yadav","role":"Bowler","risk_level":"High"},{"id":"LSG_9","name":"Avesh Khan","role":"Bowler","risk_level":"Medium"},{"id":"LSG_10","name":"Wanindu Hasaranga","role":"All-rounder","risk_level":"Low"},{"id":"LSG_11","name":"Mohsin Khan","role":"Bowler","risk_level":"High"}]},{"team":"Sunrisers Hyderabad","abbr":"SRH","players":[{"id":"SRH_1","name":"Travis Head","role":"Batsman","risk_level":"Low"},{"id":"SRH_2","name":"Abhishek Sharma","role":"Batsman","risk_level":"Low"},{"id":"SRH_3","name":"Ishan Kishan","role":"Wicketkeeper-Batsman","risk_level":"Medium"},{"id":"SRH_4","name":"Heinrich Klaasen","role":"Wicketkeeper-Batsman","risk_level":"Low"},{"id":"SRH_5","name":"Nitish Kumar Reddy","role":"All-rounder","risk_level":"Medium"},{"id":"SRH_6","name":"Liam Livingstone","role":"All-rounder","risk_level":"Medium"},{"id":"SRH_7","name":"Harshal Patel","role":"Bowler","risk_level":"Low"},{"id":"SRH_8","name":"Pat Cummins","role":"All-rounder","risk_level":"Medium"},{"id":"SRH_9","name":"Brydon Carse","role":"Bowler","risk_level":"High"},{"id":"SRH_10","name":"Harsh Dubey","role":"Bowler","risk_level":"High"},{"id":"SRH_11","name":"Jaydev Unadkat","role":"Bowler","risk_level":"Medium"}]}]};
+
+// ============================================================
+// DATA LAYER — builds the same structure loadData() used to build
+// ============================================================
+var APP_DATA = { teams: [], matches: [], loaded: false };
+
+function buildTeamMap() {
+  // Build teams array from inline squads
+  // Map team names with/without abbreviation for robust matching
+  var nameAliases = {};
+  INLINE_TEAMS.IPL_2026_Squads.forEach(function(squad) {
+    var obj = { team: squad.team, players: squad.players };
+    APP_DATA.teams.push(obj);
+    // Also register with abbreviation stripped names for match lookup
+    var base = squad.team.replace(/\s*\(.*?\)\s*/g,'').trim();
+    nameAliases[base] = squad.team;
+    nameAliases[squad.team] = squad.team;
+    if (squad.abbr) nameAliases[squad.abbr] = squad.team;
+  });
+  window._teamAliases = nameAliases;
+
+  // Build matches array
+  APP_DATA.matches = INLINE_MATCHES.matches.map(function(m) {
+    return {
+      match_id: m.match_id,
+      team1: m.team1,
+      team2: m.team2,
+      date: m.date,
+      time: m.time,
+      venue: m.venue
+    };
+  });
+  APP_DATA.loaded = true;
+}
+
+function resolveTeamName(name) {
+  if (!name) return name;
+  var aliases = window._teamAliases || {};
+  if (aliases[name]) return aliases[name];
+  // Fuzzy: find a team whose name contains or is contained by 'name'
+  var lower = name.toLowerCase();
+  for (var key in aliases) {
+    if (key.toLowerCase() === lower) return aliases[key];
+  }
+  for (var key in aliases) {
+    if (key.toLowerCase().indexOf(lower) !== -1 || lower.indexOf(key.toLowerCase()) !== -1) return aliases[key];
+  }
+  return name;
+}
+
+// ============================================================
+// GEN STATE
+// ============================================================
+var GEN_STATE = {
+  selT1: null, selT2: null, selMID: null, selMode: null,
+  lockedIds: [], excludedIds: [],
+  generatedTeams: [], unlocked: false,
+  team1: '', team2: '', mode: '', venue: '',
+  uniqueCaps: 0, cvCombos: 0
+};
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+var currentPage = 'home';
+var PAGES_WITH_STEPS = ['home', 'results'];
+
+function navigate(page, param) {
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+  currentPage = page;
+  document.querySelectorAll('.hdr-nav a[data-page]').forEach(function(a){
+    a.classList.toggle('active', a.dataset.page === page);
+  });
+  var showSteps = PAGES_WITH_STEPS.indexOf(page) !== -1;
+  document.getElementById('stepBarWrap').style.display = showSteps ? 'flex' : 'none';
+  document.getElementById('appBody').className = showSteps ? 'has-steps' : 'no-steps';
+
+  if (page === 'home') {
+    document.getElementById('page-home').classList.add('active');
+    document.getElementById('stepBarWrap').style.display = 'flex';
+    setStep(GEN_STATE.selT1 ? (GEN_STATE.selMode ? (GEN_STATE.generatedTeams.length ? 4 : 3) : 2) : 1);
+  } else if (page === 'results') {
+    document.getElementById('page-results').classList.add('active');
+    document.getElementById('stepBarWrap').style.display = 'flex';
+    updateResultsStepBar();
+  } else if (page === 'blog') {
+    document.getElementById('page-blog').classList.add('active');
+    renderBlogGrid();
+  } else if (page === 'blogpost') {
+    document.getElementById('page-blogpost').classList.add('active');
+    renderBlogPost(param);
+  } else if (page === 'captain') {
+    document.getElementById('page-strategy').classList.add('active');
+  } else {
+    var el = document.getElementById('page-' + page);
+    if (el) el.classList.add('active');
+  }
+  window.scrollTo(0, 0);
+}
+
+function updateResultsStepBar() {
+  ['step1','step2','step3'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.className = 'step done';
+  });
+  var s4 = document.getElementById('step4');
+  if (s4) s4.className = 'step active';
+}
+
+// ============================================================
+// TOAST & HELPERS
+// ============================================================
+function showToast(msg, color) {
+  color = color || '#00e5a0';
+  var t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.style.background = color;
+  t.style.color = (color === '#00e5a0' || color === '#f5c842') ? '#000' : '#fff';
+  t.classList.add('show');
+  setTimeout(function(){ t.classList.remove('show'); }, 3400);
+}
+
+function scrollToId(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var offset = 58 + 52 + 12;
+  var y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+  window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
+function toggleFaq(el) {
+  var a = el.nextElementSibling;
+  var isOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.classList.remove('open');
+    if (q.nextElementSibling) q.nextElementSibling.classList.remove('open');
+  });
+  if (!isOpen) { el.classList.add('open'); if (a) a.classList.add('open'); }
+}
+
+function setStep(n) {
+  for (var i = 1; i <= 4; i++) {
+    var el = document.getElementById('step' + i);
+    if (!el) continue;
+    el.classList.remove('done', 'active');
+    if (i < n) el.classList.add('done');
+    if (i === n) el.classList.add('active');
+  }
+}
+
+// ============================================================
+// AGE GATE
+// ============================================================
+(function() {
+  try {
+    if (localStorage.getItem('fantasyxi_age_ok') === '1') {
+      var g = document.getElementById('ageGate');
+      if (g) g.style.display = 'none';
+    }
+  } catch(e) {}
+})();
+
+function ageConfirm(isAdult) {
+  var gate = document.getElementById('ageGate');
+  var blocked = document.getElementById('ageBlocked');
+  if (isAdult) {
+    try { localStorage.setItem('fantasyxi_age_ok', '1'); } catch(e) {}
+    if (gate) { gate.style.transition = 'opacity .3s'; gate.style.opacity = '0'; setTimeout(function(){ gate.style.display = 'none'; }, 300); }
+  } else {
+    if (gate) gate.style.display = 'none';
+    if (blocked) blocked.style.display = 'flex';
+  }
+}
+
+// ============================================================
+// TAB + ADV
+// ============================================================
+function showTab(id, el) {
+  document.getElementById('tab-up').style.display = id === 'up' ? '' : 'none';
+  document.getElementById('tab-man').style.display = id === 'man' ? '' : 'none';
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+  el.classList.add('active'); el.setAttribute('aria-selected','true');
+}
+
+function toggleAdv(header) {
+  var body = document.getElementById('advBody');
+  var arrow = header.querySelector('.adv-header-arrow');
+  var isOpen = arrow.classList.contains('open');
+  if (isOpen) { body.style.display = 'none'; arrow.classList.remove('open'); header.setAttribute('aria-expanded','false'); }
+  else { body.style.display = ''; arrow.classList.add('open'); header.setAttribute('aria-expanded','true'); }
+}
+
+// ============================================================
+// RENDER MATCH CARDS
+// ============================================================
+function renderMatchCards() {
+  var grid = document.getElementById('matchGrid');
+  if (!grid) return;
+  if (!APP_DATA.matches.length) {
+    grid.innerHTML = '<div style="color:var(--txt3);font-size:.85rem;">No upcoming matches found.</div>';
+    return;
+  }
+  grid.innerHTML = APP_DATA.matches.map(function(m){
+    var safeVenue = (m.venue||'').replace(/"/g,'&quot;');
+    return '<div class="match-card" role="listitem" tabindex="0"' +
+      ' data-mid="'+m.match_id+'" data-t1="'+m.team1+'" data-t2="'+m.team2+'"' +
+      ' data-date="'+(m.date||'')+'" data-venue="'+safeVenue+'"' +
+      ' onclick="selectMatchEl(this)" onkeydown="if(event.key===\'Enter\')this.click()">' +
+      '<div class="match-time">'+(m.time||'')+'</div>' +
+      '<div class="match-id-tag">📅 '+(m.date||'')+' · '+m.match_id+'</div>' +
+      '<div class="match-vs">'+m.team1+'<em>VS</em>'+m.team2+'</div>' +
+      '<div class="match-venue">📍 '+(m.venue||'')+'</div>' +
+      '</div>';
+  }).join('');
+}
+
+function renderTeamSelects() {
+  var t1 = document.getElementById('mt1');
+  var t2 = document.getElementById('mt2');
+  if (!t1 || !t2) return;
+  var opts = APP_DATA.teams.map(function(t,i){
+    return '<option value="'+t.team+'"'+(i===1?' selected':'')+'>'+t.team+'</option>';
+  }).join('');
+  t1.innerHTML = opts;
+  t2.innerHTML = opts;
+}
+
+// ============================================================
+// MATCH SELECTION
+// ============================================================
+function selectMatchEl(el) {
+  selectMatch(el.dataset.mid, el.dataset.t1, el.dataset.t2, el.dataset.date, el.dataset.venue, el);
+}
+
+function selectMatch(id, t1, t2, date, venue, el) {
+  GEN_STATE.selMID = id;
+  GEN_STATE.selT1 = resolveTeamName(t1);
+  GEN_STATE.selT2 = resolveTeamName(t2);
+  document.querySelectorAll('.match-card').forEach(function(c){ c.classList.remove('selected'); });
+  el.classList.add('selected');
+  var info = document.getElementById('selInfo');
+  info.style.display = 'block';
+  info.innerHTML = '✅ <strong>'+t1+' vs '+t2+'</strong> · '+date+' · 📍 '+venue;
+  populatePlayerChips(GEN_STATE.selT1, GEN_STATE.selT2);
+  setStep(2);
+  setTimeout(function(){ scrollToId('section-mode'); }, 260);
+}
+
+function setManual() {
+  var t1 = document.getElementById('mt1').value;
+  var t2 = document.getElementById('mt2').value;
+  if (t1 === t2) { showToast('Please select two different teams!', '#ff4d6d'); return; }
+  GEN_STATE.selT1 = t1; GEN_STATE.selT2 = t2; GEN_STATE.selMID = 'manual';
+  populatePlayerChips(t1, t2);
+  setStep(2);
+  showToast('✅ Teams confirmed!', '#f5c842');
+}
+
+function selectMode(m, el) {
+  GEN_STATE.selMode = m;
+  document.querySelectorAll('.mode-card').forEach(function(c){ c.classList.remove('active'); c.setAttribute('aria-checked','false'); });
+  el.classList.add('active'); el.setAttribute('aria-checked','true');
+  setStep(3);
+}
+
+// ============================================================
+// CHIP PICKERS
+// ============================================================
+function getTeamPlayers(teamName) {
+  var resolved = resolveTeamName(teamName);
+  var found = APP_DATA.teams.find(function(t){ return t.team === resolved; });
+  if (found) return found.players.slice(0, 11);
+  // Fallback: partial match
+  var lower = (teamName||'').toLowerCase();
+  found = APP_DATA.teams.find(function(t){ return t.team.toLowerCase().indexOf(lower) !== -1 || lower.indexOf(t.team.toLowerCase()) !== -1; });
+  return found ? found.players.slice(0, 11) : [];
+}
+
+function populatePlayerChips(t1, t2) {
+  GEN_STATE.lockedIds = []; GEN_STATE.excludedIds = [];
+  updateSummary('lock'); updateSummary('excl');
+  var teams = [
+    { name: t1, players: getTeamPlayers(t1) },
+    { name: t2, players: getTeamPlayers(t2) }
+  ];
+  function buildPicker(cid, type) {
+    var container = document.getElementById(cid);
+    if (!container) return;
+    container.innerHTML = '';
+    teams.forEach(function(team) {
+      var lbl = document.createElement('div');
+      lbl.className = 'chip-team-lbl'; lbl.textContent = team.name;
+      container.appendChild(lbl);
+      var row = document.createElement('div'); row.className = 'chip-row';
+      (team.players || []).forEach(function(p) {
+        var chip = document.createElement('button');
+        chip.type = 'button'; chip.className = 'pchip';
+        chip.dataset.id = p.id; chip.dataset.name = p.name; chip.dataset.type = type;
+        var rs = (p.role||'').replace('Wicketkeeper-Batsman','WK').replace('All-rounder','AR').replace('Batsman','BAT').replace('Bowler','BOWL');
+        chip.innerHTML = '<span class="pchip-name">'+p.name+'</span><span class="pchip-role">'+rs+'</span>';
+        chip.onclick = function(){ toggleChip(chip, type); };
+        row.appendChild(chip);
+      });
+      container.appendChild(row);
+    });
+  }
+  buildPicker('lock_picker', 'lock');
+  buildPicker('excl_picker', 'excl');
+}
+
+function toggleChip(chip, type) {
+  var id = chip.dataset.id, name = chip.dataset.name;
+  var arr = type === 'lock' ? GEN_STATE.lockedIds : GEN_STATE.excludedIds;
+  var other = type === 'lock' ? GEN_STATE.excludedIds : GEN_STATE.lockedIds;
+  if (other.indexOf(id) !== -1) { showToast('⚠️ '+name+' is in the other list.', '#ff4d6d'); return; }
+  var idx = arr.indexOf(id);
+  if (idx === -1) { arr.push(id); chip.classList.add(type === 'lock' ? 'pchip--active' : 'pchip--active-excl'); }
+  else { arr.splice(idx, 1); chip.classList.remove('pchip--active','pchip--active-excl'); }
+  updateSummary(type);
+}
+
+function updateSummary(type) {
+  var arr = type === 'lock' ? GEN_STATE.lockedIds : GEN_STATE.excludedIds;
+  var el = document.getElementById(type + '_summary');
+  if (!el) return;
+  if (!arr.length) { el.innerHTML = ''; return; }
+  var cls = type === 'lock' ? 'pchip--active' : 'pchip--active-excl';
+  var names = [];
+  document.querySelectorAll('.pchip.'+cls+'[data-type="'+type+'"]').forEach(function(c){ names.push(c.dataset.name); });
+  var col = type === 'lock' ? 'var(--grn)' : 'var(--red)';
+  el.innerHTML = '<span style="color:'+col+';font-weight:700;">'+(type==='lock'?'🔒':'🚫')+' '+names.length+' selected: </span><span style="color:var(--txt2);">'+names.join(', ')+'</span>';
+}
+
+// ============================================================
+// AI GENERATION ENGINE
+// ============================================================
+function hashTeam(ids) { return ids.slice().sort().join(','); }
+
+function riskWeight(p, mode) {
+  var r = p.risk_level || 'Medium';
+  if (mode === 'safe') return { Low:5, Medium:2, High:0.5 }[r] || 2;
+  if (mode === 'balanced') return { Low:3, Medium:4, High:2 }[r] || 4;
+  return { Low:1.5, Medium:3, High:6 }[r] || 3;
+}
+
+function rolesOk(players) {
+  var wk=0,bat=0,ar=0,bowl=0;
+  players.forEach(function(p){
+    var r = p.role||'';
+    if (r==='Wicketkeeper-Batsman') wk++;
+    else if (r==='Batsman') bat++;
+    else if (r==='All-rounder') ar++;
+    else if (r==='Bowler') bowl++;
+  });
+  return (wk>=1&&wk<=4)&&(bat>=3&&bat<=6)&&(ar>=1&&ar<=4)&&(bowl>=3&&bowl<=6);
+}
+
+function weightedChoice(pool, weights) {
+  var total = weights.reduce(function(a,b){return a+b;},0);
+  var r = Math.random() * total, cum = 0;
+  for (var i=0;i<pool.length;i++){ cum+=weights[i]; if(r<=cum) return pool[i]; }
+  return pool[pool.length-1];
+}
+
+function pickUnique(pool, weights, n, lockedIds, appear, nt, exposurePct, randStrength) {
+  var lockedPlayers = pool.filter(function(p){ return lockedIds.has(p.id); });
+  var freePool = pool.filter(function(p){ return !lockedIds.has(p.id); });
+  var freeWeights = [];
+  pool.forEach(function(p,i){ if(!lockedIds.has(p.id)) freeWeights.push(weights[i]); });
+  var need = n - lockedPlayers.length;
+  if (need < 0) lockedPlayers = lockedPlayers.slice(0,n);
+  need = Math.max(need, 0);
+  var seen = new Set(lockedPlayers.map(function(p){ return p.id; }));
+  var out = lockedPlayers.slice();
+  if (need > 0 && freePool.length) {
+    var adjWeights = freeWeights.map(function(w){ return Math.max(w*(1+randStrength*(Math.random()-0.5)),0.01); });
+    var maxAttempts = Math.min(freePool.length, need*6);
+    var tries = [];
+    for (var k=0;k<maxAttempts;k++) tries.push(weightedChoice(freePool,adjWeights));
+    for (var ti=0;ti<tries.length;ti++){
+      var t=tries[ti];
+      if (!seen.has(t.id)){
+        if ((appear[t.id]||0) >= Math.floor(nt*exposurePct)) continue;
+        seen.add(t.id); out.push(t);
+      }
+      if (out.length===n) break;
+    }
+    var rest = freePool.filter(function(p){ return !seen.has(p.id); });
+    rest.sort(function(){ return Math.random()-0.5; });
+    for (var ri=0;ri<rest.length;ri++){
+      if (out.length===n) break;
+      out.push(rest[ri]); seen.add(rest[ri].id);
+    }
+  }
+  return out;
+}
+
+function genTeams(team1, team2, mode, cr, nt, adv) {
+  adv = adv || {};
+  var teamMap = {};
+  APP_DATA.teams.forEach(function(t){ teamMap[t.team] = t; });
+
+  // Try to find by exact name first, then resolved name
+  var t1obj = teamMap[team1] || teamMap[resolveTeamName(team1)];
+  var t2obj = teamMap[team2] || teamMap[resolveTeamName(team2)];
+
+  if (!t1obj || !t2obj) {
+    // Last resort: partial match
+    var lower1 = (team1||'').toLowerCase(), lower2 = (team2||'').toLowerCase();
+    APP_DATA.teams.forEach(function(t){
+      var tl = t.team.toLowerCase();
+      if (!t1obj && (tl.indexOf(lower1)!==-1||lower1.indexOf(tl)!==-1)) t1obj=t;
+      if (!t2obj && (tl.indexOf(lower2)!==-1||lower2.indexOf(tl)!==-1)) t2obj=t;
+    });
+  }
+
+  var xi1 = t1obj ? t1obj.players.slice(0,11) : [];
+  var xi2 = t2obj ? t2obj.players.slice(0,11) : [];
+
+  if (!xi1.length || !xi2.length) {
+    showToast('Could not find player data for one or both teams.', '#ff4d6d');
+    return { teams: [], uniqueCaps: 0, cvCombos: 0 };
+  }
+
+  var lockedIds = new Set(adv.locked || []);
+  var excludedIds = new Set(adv.excluded || []);
+  var maxFromOne = parseInt(adv.max_from_one) || 7;
+  var exposurePct = (parseFloat(adv.exposure_pct) || 75) / 100;
+  var riskIntensity = parseFloat(adv.risk_intensity) || 1.0;
+  var randStrength = parseFloat(adv.rand_strength) || 0.5;
+  var minDiff = parseInt(adv.min_diff) || 0;
+
+  var pool1 = xi1.filter(function(p){ return !excludedIds.has(p.id); });
+  var pool2 = xi2.filter(function(p){ return !excludedIds.has(p.id); });
+  var appear={}, capCnt={}, vcCnt={};
+  var cvPairs = new Set(), thSet = new Set(), lastCap = [], result = [];
+
+  function capPool(players) {
+    var e;
+    if (mode==='safe') e=players.filter(function(p){return p.risk_level==='Low';});
+    else if (mode==='balanced') e=players.filter(function(p){return p.risk_level==='Low'||p.risk_level==='Medium';});
+    else e=players.slice();
+    return e.length ? e : players.slice();
+  }
+
+  for (var idx=0; idx<nt; idx++) {
+    var valid=false, attempts=0, captain=null, vice_captain=null, sel1=[], sel2=[];
+    while (!valid && attempts<400) {
+      attempts++;
+      var c1flag = cr.c1!==false;
+      var n1=(c1flag&&idx%2===0)?6:5;
+      var n2=(c1flag&&idx%2===0)?5:6;
+      var w1=pool1.map(function(p){ return riskWeight(p,mode)*riskIntensity; });
+      var w2=pool2.map(function(p){ return riskWeight(p,mode)*riskIntensity; });
+      if (adv.differential && idx>=10) {
+        w1=pool1.map(function(p,i){ return w1[i]*Math.max(0.5,1-(appear[p.id]||0)/Math.max(nt,1)); });
+        w2=pool2.map(function(p,i){ return w2[i]*Math.max(0.5,1-(appear[p.id]||0)/Math.max(nt,1)); });
+      }
+      var tmpLocked=new Set(lockedIds);
+      if (minDiff>0 && idx>=5) {
+        var s1=pool1.slice().sort(function(a,b){return (appear[a.id]||0)-(appear[b.id]||0);}).slice(0,minDiff);
+        var s2=pool2.slice().sort(function(a,b){return (appear[a.id]||0)-(appear[b.id]||0);}).slice(0,minDiff);
+        s1.concat(s2).forEach(function(p){tmpLocked.add(p.id);});
+      }
+      sel1=pickUnique(pool1,w1,n1,tmpLocked,appear,nt,exposurePct,randStrength);
+      sel2=pickUnique(pool2,w2,n2,tmpLocked,appear,nt,exposurePct,randStrength);
+      if (sel1.length!==n1||sel2.length!==n2) continue;
+      var players=sel1.concat(sel2);
+      if (cr.c14!==false && !rolesOk(players)) continue;
+      if (cr.c13!==false && (sel1.length>maxFromOne||sel2.length>maxFromOne)) continue;
+      var h=hashTeam(players.map(function(p){return p.id;}));
+      if (cr.c12!==false && thSet.has(h)) continue;
+      var cp=capPool(players);
+      var cws=cp.map(function(p){ return Math.max(riskWeight(p,mode)*riskIntensity/(1+(capCnt[p.id]||0)*0.5),0.05); });
+      if (cr.c11!==false && lastCap.length>=3 && lastCap.slice(-3).every(function(x){return x===lastCap[lastCap.length-1];})) {
+        var forb=lastCap[lastCap.length-1];
+        var cpA=[], cwsA=[];
+        cp.forEach(function(p,i){ if(p.id!==forb){cpA.push(p);cwsA.push(cws[i]);} });
+        if (cpA.length){cp=cpA;cws=cwsA;}
+      }
+      captain=weightedChoice(cp,cws);
+      if (cr.c15!==false && idx<5) {
+        var arDone=Object.keys(capCnt).some(function(cid){return players.find(function(p){return p.id===cid&&p.role==='All-rounder';});});
+        if (!arDone&&idx===4){ var arc=cp.filter(function(p){return p.role==='All-rounder';}); if(arc.length) captain=arc[Math.floor(Math.random()*arc.length)]; }
+      }
+      var vp=players.filter(function(p){return p.id!==captain.id;});
+      if (!vp.length) continue;
+      var vws=vp.map(function(p){ return Math.max(riskWeight(p,mode)/(1+(vcCnt[p.id]||0)*0.3),0.05); });
+      if (cr.c7!==false) {
+        var vpA=[],vwsA=[];
+        vp.forEach(function(p,i){ if(!cvPairs.has(captain.id+'|'+p.id)){vpA.push(p);vwsA.push(vws[i]);} });
+        if(vpA.length){vp=vpA;vws=vwsA;}
+      }
+      vice_captain=weightedChoice(vp,vws);
+      var cv=captain.id+'|'+vice_captain.id;
+      if (cr.c6!==false&&cvPairs.size<5&&result.length>=5&&cvPairs.has(cv)&&attempts<150) continue;
+      if (adv.unique_cap&&result.some(function(r){return r._cap_id===captain.id;})) continue;
+      if (adv.unique_vc&&result.some(function(r){return r._vc_id===vice_captain.id;})) continue;
+      valid=true;
+      thSet.add(h); cvPairs.add(cv);
+      capCnt[captain.id]=(capCnt[captain.id]||0)+1;
+      vcCnt[vice_captain.id]=(vcCnt[vice_captain.id]||0)+1;
+      lastCap.push(captain.id);
+      players.forEach(function(p){ appear[p.id]=(appear[p.id]||0)+1; });
+    }
+    if (valid) {
+      result.push({
+        players: sel1.concat(sel2),
+        captain: captain?captain.name:'—',
+        vice_captain: vice_captain?vice_captain.name:'—',
+        _cap_id: captain?captain.id:null,
+        _vc_id: vice_captain?vice_captain.id:null,
+        from_t1: sel1.length,
+        from_t2: sel2.length
+      });
+    }
+  }
+  return { teams: result, uniqueCaps: Object.keys(capCnt).length, cvCombos: cvPairs.size };
+}
+
+// ============================================================
+// GENERATE
+// ============================================================
+function doGenerate() {
+  if (!GEN_STATE.selT1||!GEN_STATE.selT2) { showToast('Please select a match first!','#ff4d6d'); return; }
+  if (!GEN_STATE.selMode) { showToast('Please choose a generation mode!','#ff4d6d'); return; }
+  var cr={};
+  ['c1','c6','c7','c8','c11','c12','c13','c14','c15'].forEach(function(k){
+    var el=document.getElementById(k); cr[k]=el?el.checked:true;
+  });
+  var adv={
+    unique_cap:!!(document.getElementById('unique_cap')||{}).checked,
+    unique_vc:!!(document.getElementById('unique_vc')||{}).checked,
+    differential:!!(document.getElementById('differential')||{}).checked,
+    exposure_pct:parseInt(document.getElementById('exposure').value)||75,
+    max_from_one:parseInt(document.getElementById('max_from_one').value)||7,
+    risk_intensity:(parseFloat(document.getElementById('risk_intensity').value)||10)/10,
+    rand_strength:(parseFloat(document.getElementById('rand_strength').value)||5)/10,
+    min_diff:parseInt(document.getElementById('min_diff').value)||0,
+    locked:GEN_STATE.lockedIds.slice(),
+    excluded:GEN_STATE.excludedIds.slice()
+  };
+  var nt=Math.min(parseInt(document.getElementById('nt').value)||20,20);
+  setStep(4);
+  var spin=document.getElementById('spinnerOverlay');
+  var btn=document.getElementById('generateBtn');
+  if(spin) spin.classList.add('active');
+  if(btn){btn.disabled=true;btn.style.opacity='.65';btn.textContent='Generating…';}
+  setTimeout(function(){
+    try {
+      var result=genTeams(GEN_STATE.selT1,GEN_STATE.selT2,GEN_STATE.selMode,cr,nt,adv);
+      GEN_STATE.generatedTeams=result.teams;
+      GEN_STATE.uniqueCaps=result.uniqueCaps;
+      GEN_STATE.cvCombos=result.cvCombos;
+      GEN_STATE.unlocked=false;
+      GEN_STATE.team1=GEN_STATE.selT1;
+      GEN_STATE.team2=GEN_STATE.selT2;
+      GEN_STATE.mode=GEN_STATE.selMode;
+      GEN_STATE.venue='';
+      if (GEN_STATE.selMID!=='manual') {
+        var m=APP_DATA.matches.find(function(x){return x.match_id===GEN_STATE.selMID;});
+        if (m) GEN_STATE.venue=m.venue||'';
+      }
+    } catch(e) {
+      console.error('Generation error:',e);
+      showToast('Generation error. Please try again.','#ff4d6d');
+    }
+    if(spin) spin.classList.remove('active');
+    if(btn){btn.disabled=false;btn.style.opacity='';btn.textContent='🤖 Generate AI Teams';}
+    if(GEN_STATE.generatedTeams.length){ renderResultsPage(); navigate('results'); }
+    else showToast('Could not generate teams. Check team data.','#ff4d6d');
+  },200);
+}
+
+function resetAll() {
+  GEN_STATE.selT1=GEN_STATE.selT2=GEN_STATE.selMID=GEN_STATE.selMode=null;
+  GEN_STATE.lockedIds=[]; GEN_STATE.excludedIds=[];
+  GEN_STATE.generatedTeams=[]; GEN_STATE.unlocked=false;
+  document.querySelectorAll('.match-card').forEach(function(c){c.classList.remove('selected');});
+  document.querySelectorAll('.mode-card').forEach(function(c){c.classList.remove('active');c.setAttribute('aria-checked','false');});
+  var info=document.getElementById('selInfo'); if(info) info.style.display='none';
+  ['lock_picker','excl_picker'].forEach(function(id){ var el=document.getElementById(id); if(el) el.innerHTML='<span class="chip-placeholder">Select a match first</span>'; });
+  ['lock_summary','excl_summary'].forEach(function(id){ var el=document.getElementById(id); if(el) el.innerHTML=''; });
+  setStep(1);
+  showToast('🔄 Reset. Select a match to start.','#4db8ff');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ============================================================
+// RESULTS RENDERING
+// ============================================================
+function renderResultsPage() {
+  var teams=GEN_STATE.generatedTeams, team1=GEN_STATE.team1, team2=GEN_STATE.team2;
+  var mode=GEN_STATE.mode, venue=GEN_STATE.venue, unlocked=GEN_STATE.unlocked, total=teams.length;
+  document.getElementById('resultsBannerTitle').textContent=total+' AI Teams Generated!';
+  document.getElementById('resultsBannerSub').textContent='First 3 are instantly free · Watch a 5-second ad to unlock all '+(total-3)+' remaining teams';
+  var pillClass='pill-'+mode;
+  var html='<div class="match-strip">'+
+    '<div><div class="strip-vs">'+team1+'<em>VS</em>'+team2+'</div>'+(venue?'<div class="strip-venue">📍 '+venue+'</div>':'')+
+    '</div><div class="strip-right"><span class="pill '+pillClass+'">'+mode.toUpperCase()+'</span><span class="pill pill-neutral">'+total+' Teams</span></div></div>'+
+    '<div class="stats-bar">'+
+    '<div class="stat-chip"><strong>'+total+'</strong><span>Total Teams</span></div>'+
+    '<div class="stat-chip"><strong>3</strong><span>Free Preview</span></div>'+
+    '<div class="stat-chip"><strong>'+(total-3)+'</strong><span>Locked</span></div>'+
+    '<div class="stat-chip"><strong>'+GEN_STATE.uniqueCaps+'</strong><span>Captains</span></div>'+
+    '<div class="stat-chip"><strong>'+GEN_STATE.cvCombos+'</strong><span>C/VC Combos</span></div>'+
+    '</div>'+
+    '<div class="res-topbar"><div class="sh" style="margin-bottom:0;">Your Generated Teams</div>'+
+    (unlocked?'<button class="btn btn-grn" style="font-size:.85rem;padding:9px 18px;" onclick="exportPDF()">📄 Export All PDF</button>':'')+
+    '</div>'+
+    '<div class="team-grid" id="mainGrid">';
+  teams.slice(0,3).forEach(function(t,i){ html+=renderTeamCard(t,i,team1,team2,true,false); });
+  if (!unlocked) {
+    html+='<div class="unlock-banner fade-up" id="unlockBanner" style="animation-delay:.16s;">'+
+      '<div class="unlock-count">🤖 '+(total-3)+' AI Teams Waiting</div>'+
+      '<h3>Unlock All '+(total-3)+' Remaining Teams</h3>'+
+      '<div class="unlock-perks"><span class="unlock-perk">✅ Completely free</span><span class="unlock-perk">⏱ Takes 5 seconds</span><span class="unlock-perk">📋 Copy any team</span><span class="unlock-perk">📄 Export to PDF</span></div>'+
+      '<p>Watch one short 5-second ad — then all teams unlock instantly.</p>'+
+      '<button class="btn btn-ora btn-xl" onclick="openAd()">▶ Watch 1 Ad → Unlock All</button></div>';
+  }
+  teams.slice(3).forEach(function(t,i){ html+=renderTeamCard(t,i+3,team1,team2,unlocked,!unlocked); });
+  html+='</div>';
+  if (unlocked) html+='<div style="text-align:center;margin:36px 0;"><button class="btn btn-grn btn-xl" onclick="exportPDF()">📄 Export All '+total+' Teams as PDF</button></div>';
+  html+='<div style="text-align:center;margin-top:22px;"><button class="btn btn-ghost" onclick="navigate(\'home\')">← Generate New Teams</button></div>';
+  document.getElementById('resultsContent').innerHTML=html;
+}
+
+function renderTeamCard(t, idx, team1, team2, copyEnabled, locked) {
+  var roleDot={'Batsman':'d-bat','Bowler':'d-bowl','All-rounder':'d-ar','Wicketkeeper-Batsman':'d-wk'};
+  var riskTag={'Low':'rL','Medium':'rM','High':'rH'};
+  var plistHtml=(t.players||[]).map(function(p){
+    return '<li class="pitem"><div class="rdot '+(roleDot[p.role]||'d-bat')+'"></div>'+
+      '<span class="pname">'+p.name+(p.name===t.captain?'<span class="ct">(C)</span>':'')+(p.name===t.vice_captain?'<span class="vct">(VC)</span>':'')+'</span>'+
+      '<span class="rtag '+(riskTag[p.risk_level]||'rM')+'">'+p.risk_level+'</span></li>';
+  }).join('');
+  var badgeHtml=locked?'<span class="badge badge-lock">🔒 LOCKED</span>':'<span class="badge badge-free">FREE ✓</span>';
+  var copyBtnHtml=locked?'<button class="copy-btn" disabled>📋 Copy</button>':'<button class="copy-btn" onclick="copyTeam('+idx+')">📋 Copy</button>';
+  var lockOv=locked?'<div class="lock-ov"><div class="lock-ico">🔒</div><div class="lock-lbl">LOCKED</div><div class="lock-sub">Watch ad to unlock</div></div>':'';
+  return '<div class="team-card fade-up" style="animation-delay:'+(idx*0.03)+'s;">'+
+    '<div class="team-hdr"><div class="team-num">Team '+(idx+1)+'</div>'+badgeHtml+'</div>'+
+    '<div class="cv-row"><div class="cv-pill cv-c"><span class="cv-lbl">Captain 2×</span><span class="cv-nm">'+t.captain+'</span></div>'+
+    '<div class="cv-pill cv-vc"><span class="cv-lbl">Vice Captain 1.5×</span><span class="cv-nm">'+t.vice_captain+'</span></div></div>'+
+    '<ul class="plist">'+plistHtml+'</ul>'+
+    '<div class="card-foot"><div class="foot-info">'+t.from_t1+' '+team1+' · '+t.from_t2+' '+team2+'</div>'+copyBtnHtml+'</div>'+
+    lockOv+'</div>';
+}
+
+// ============================================================
+// AD MODAL & UNLOCK
+// ============================================================
+var adInterval=null, adCountdown=5, adRunning=false;
+
+function openAd() {
+  if (adRunning) return;
+  var modal=document.getElementById('adModal');
+  if (!modal) return;
+  adCountdown=5; adRunning=true;
+  var bar=document.getElementById('adBar'), tmr=document.getElementById('adTmr'), note=document.getElementById('closeNote');
+  if(bar) bar.style.width='0%';
+  if(tmr) tmr.textContent='⏳ 5s remaining';
+  if(note) note.textContent='Please wait — your teams are almost ready…';
+  modal.classList.add('open');
+  if(adInterval){clearInterval(adInterval);adInterval=null;}
+  adInterval=setInterval(function(){
+    adCountdown--;
+    var pct=((5-adCountdown)/5*100).toFixed(1);
+    if(bar) bar.style.width=pct+'%';
+    if(adCountdown>0){if(tmr) tmr.textContent='⏳ '+adCountdown+'s remaining';}
+    else{
+      if(tmr) tmr.textContent='✅ Complete!';
+      if(note) note.textContent='Unlocking your teams now…';
+      clearInterval(adInterval); adInterval=null;
+      setTimeout(function(){modal.classList.remove('open');adRunning=false;doUnlock();},700);
+    }
+  },1000);
+}
+
+function doUnlock() {
+  GEN_STATE.unlocked=true;
+  renderResultsPage();
+  showToast('🎉 All teams unlocked!','#f5c842');
+}
+
+// ============================================================
+// COPY TEAM
+// ============================================================
+function copyTeam(idx) {
+  var t=GEN_STATE.generatedTeams[idx];
+  if (!t) return;
+  var txt='Team '+(idx+1)+'\nCaptain (2x): '+t.captain+'\nVC (1.5x): '+t.vice_captain+'\n\nPlayers:\n';
+  (t.players||[]).forEach(function(p){txt+=p.name+'\n';});
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt).then(function(){showToast('📋 Team '+(idx+1)+' copied!');});
+  } else {
+    var ta=document.createElement('textarea'); ta.value=txt;
+    document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+    document.body.removeChild(ta); showToast('📋 Team '+(idx+1)+' copied!');
+  }
+}
+
+// ============================================================
+// PDF EXPORT
+// ============================================================
+function exportPDF() {
+  var teams=GEN_STATE.generatedTeams;
+  if (!teams.length){showToast('No teams to export.','#ff4d6d');return;}
+  var team1=GEN_STATE.team1, team2=GEN_STATE.team2, mode=GEN_STATE.mode.toUpperCase(), venue=GEN_STATE.venue;
+  var today=new Date().toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+  var roleAbbr={'Wicketkeeper-Batsman':'WK','Batsman':'BAT','All-rounder':'AR','Bowler':'BOWL'};
+  var riskColor={'Low':'#00e5a0','Medium':'#4db8ff','High':'#ff4d6d'};
+  var cardsHtml=teams.map(function(t,idx){
+    var rows=(t.players||[]).map(function(p){
+      var isC=p.name===t.captain, isVC=p.name===t.vice_captain;
+      var tag=isC?" <b style='color:#f5c842'>(C)</b>":(isVC?" <b style='color:#4db8ff'>(VC)</b>":'');
+      var rc=riskColor[p.risk_level]||'#fff';
+      var ra=roleAbbr[p.role]||p.role;
+      return '<tr><td style="padding:5px 8px;border-bottom:1px solid #e8e8e8;">'+p.name+tag+'</td><td style="padding:5px 8px;border-bottom:1px solid #e8e8e8;color:#555;font-size:.8rem;">'+ra+'</td><td style="padding:5px 8px;border-bottom:1px solid #e8e8e8;text-align:center;"><span style="background:'+rc+'22;color:'+rc+';font-size:.7rem;font-weight:700;padding:2px 7px;border-radius:4px;border:1px solid '+rc+'55;">'+p.risk_level+'</span></td></tr>';
+    }).join('');
+    return '<div class="team-card"><div class="card-hdr"><span class="team-num">Team '+(idx+1)+'</span><span class="badge">'+(idx<3?'FREE':'UNLOCKED')+'</span></div><div class="cv-strip"><div class="cv-box"><div class="cv-lbl">Captain 2×</div><div class="cv-name cap">'+t.captain+'</div></div><div class="cv-box"><div class="cv-lbl">Vice Captain 1.5×</div><div class="cv-name vc">'+t.vice_captain+'</div></div></div><table width="100%" cellspacing="0"><thead><tr style="background:#f8f8f8;"><th style="padding:5px 8px;text-align:left;font-size:.72rem;color:#888;">PLAYER</th><th style="padding:5px 8px;text-align:left;font-size:.72rem;color:#888;">ROLE</th><th style="padding:5px 8px;text-align:center;font-size:.72rem;color:#888;">RISK</th></tr></thead><tbody>'+rows+'</tbody></table><div style="padding:7px 10px;background:#f8f8f8;border-top:1px solid #eee;font-size:.65rem;color:#888;text-align:center;">'+t.from_t1+' from '+team1+' · '+t.from_t2+' from '+team2+'</div></div>';
+  }).join('');
+  var html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>FantasyXI AI — '+team1+' vs '+team2+'</title><style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:Arial,sans-serif;background:#fff;color:#111;font-size:13px;}.site-header{background:linear-gradient(135deg,#f5c842,#d4a212);padding:14px 24px;display:flex;justify-content:space-between;align-items:center;}.site-header h1{font-size:1.1rem;font-weight:800;color:#000;}.meta-bar{background:#111;color:#fff;padding:10px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}.meta-bar .vs{font-size:1.1rem;font-weight:800;}.meta-bar .vs em{color:#f5c842;font-style:normal;margin:0 6px;font-size:.8rem;}.print-note{background:#fffbea;border:1px solid #f5c842;border-radius:8px;padding:12px 20px;margin:18px 20px;font-size:.82rem;color:#7a5c00;display:flex;align-items:center;gap:10px;}.print-note button{background:linear-gradient(135deg,#f5c842,#d4a212);border:none;border-radius:6px;padding:7px 18px;font-size:.82rem;font-weight:700;cursor:pointer;color:#000;}.teams-wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;padding:0 20px 30px;}.team-card{border:1px solid #ddd;border-radius:10px;overflow:hidden;break-inside:avoid;}.card-hdr{background:linear-gradient(135deg,#1a1e30,#0d1020);padding:9px 13px;display:flex;justify-content:space-between;align-items:center;}.team-num{color:#f5c842;font-weight:800;font-size:.88rem;letter-spacing:2px;}.badge{background:#00e5a0;color:#000;font-size:.6rem;font-weight:800;padding:2px 9px;border-radius:100px;}.cv-strip{display:flex;gap:6px;padding:9px 10px 6px;background:#fafafa;}.cv-box{flex:1;border:1px solid #eee;border-radius:6px;padding:6px 8px;text-align:center;}.cv-lbl{font-size:.58rem;color:#999;text-transform:uppercase;margin-bottom:2px;font-weight:600;}.cv-name{font-weight:700;font-size:.78rem;}.cv-name.cap{color:#b8860b;}.cv-name.vc{color:#1a6fa6;}@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}.print-note{display:none!important;}.teams-wrap{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 10px 20px;}@page{margin:12mm 10mm;size:A4;}}</style></head><body><div class="site-header"><div><h1>⚡ FantasyXI AI</h1><p style="font-size:.72rem;color:#222;">TATA IPL 2026 · AI-powered fantasy cricket teams</p></div><div style="text-align:right;font-size:.75rem;color:#222;">'+teams.length+' Teams · '+mode+' Mode · '+today+'</div></div><div class="meta-bar"><span class="vs">'+team1+'<em>VS</em>'+team2+'</span>'+(venue?'<p style="margin:2px 0 0;font-size:.8rem;color:#aaa;">📍 '+venue+'</p>':'')+
+  '</div><div class="print-note"><span>💡 Click the button to save as PDF</span><button onclick="window.print()">🖨 Save as PDF</button></div><div class="teams-wrap">'+cardsHtml+'</div><scr'+'ipt>setTimeout(function(){if(document.visibilityState===\'visible\')window.print();},800);<\/scr'+'ipt></body></html>';
+  var w=window.open('','_blank');
+  if(w){w.document.write(html);w.document.close();}
+  else showToast('Please allow popups to export PDF.','#ff7043');
+}
+
+// ============================================================
+// BLOG
+// ============================================================
+var BLOG_POSTS=[
+  {slug:'how-to-win-dream11-grand-league',title:'How to Win Dream11 Grand League — The Complete 2026 Strategy Guide',tag:'Strategy',icon:'🏆',date:'March 2026',read_time:'10 min read',excerpt:'Grand leagues are the hardest contests in fantasy cricket — but also the most rewarding. Learn the proven portfolio strategies, differential captain picks, and multi-entry frameworks.',body:'<h2>Why Grand Leagues Are Different</h2><p>Winning a Dream11 grand league is the holy grail of fantasy cricket. In a grand league with 100,000 entries, picking the consensus "best" players guarantees a mediocre finish.</p><blockquote>In grand leagues, you don\'t win by picking the players who score the most. You win by picking players who score more than everyone else thought they would.</blockquote><h2>Captain Selection — The Grand League Game-Changer</h2><p>In grand leagues, captain selection is everything. A differential captain in only 5% of entries who fires big will rocket your team past 95% of the competition.</p><div class="highlight"><h4>🏆 Grand League Checklist</h4><ul><li>✅ Check pitch report and weather</li><li>✅ Generate 20 teams in Risky mode with differential injection</li><li>✅ Set exposure limit at 70–80%</li><li>✅ Keep at least 5 truly differential teams</li><li>✅ Play responsibly</li></ul></div><div class="warn-box"><h4>⚠️ Responsible Play</h4><p>Fantasy sports involve real financial risk. Always play within your means.</p></div>'},
+  {slug:'fantasy-cricket-beginners-guide',title:'Fantasy Cricket Beginner\'s Guide — Everything You Need to Know in 2026',tag:'Beginners',icon:'📖',date:'March 2026',read_time:'8 min read',excerpt:'New to fantasy cricket? This complete beginner\'s guide covers how fantasy cricket works, scoring, which platform to choose, and step-by-step instructions to create your first winning team.',body:'<h2>What is Fantasy Cricket?</h2><p>Fantasy cricket is an online game where you create a virtual team of real cricket players. Your team earns points based on how those players perform in actual matches.</p><div class="highlight"><h4>📊 Dream11 T20 Points System</h4><ul><li>Every run: +1 · Every four: +1 bonus · Every six: +2 bonus</li><li>Half-century: +8 · Century: +16 · Duck: -2</li><li>Every wicket: +25 · 3-wicket haul: +4 bonus</li><li>Catch: +8 · Stumping: +12</li></ul></div><div class="tips-box"><h4>💡 Beginner Quick Tips</h4><ul><li>Start with free practice contests</li><li>Pick all-rounders — they earn with bat and ball</li><li>Always check the playing XI before submitting</li><li>Use FantasyXI AI to generate multiple teams automatically</li></ul></div>'},
+  {slug:'best-captain-vc-combinations',title:'Best Captain & Vice-Captain Combinations for Fantasy Cricket — 2026 Guide',tag:'Captain Strategy',icon:'👑',date:'March 2026',read_time:'9 min read',excerpt:'The captain earns 2× points and the vice-captain 1.5×. Together they drive 45–55% of your total fantasy score. Master the art of C/VC selection with this comprehensive guide.',body:'<h2>Why Captain Selection is the Most Important Fantasy Decision</h2><p>Together, the captain (2× multiplier) and vice-captain (1.5×) contribute roughly 45–55% of your total fantasy team score.</p><div class="strategy-grid"><div class="strategy-card strat-safe"><h4>🛡 Safe Captain</h4><p>High-ownership, near-certain to score. Best for H2H and small leagues.</p></div><div class="strategy-card strat-balanced"><h4>⚖️ Balanced Captain</h4><p>Medium ownership, strong performer with two-way scoring potential.</p></div><div class="strategy-card strat-risky"><h4>🔥 Differential Captain</h4><p>Low ownership, realistic high upside. For grand leagues only.</p></div></div><h2>All-Rounders as Captain — The Secret Weapon</h2><p>The most consistently undervalued captain picks are quality all-rounders. They have two scoring engines — bat AND ball.</p>'}
+];
+
+var BLOG_INDEX={};
+BLOG_POSTS.forEach(function(p){ BLOG_INDEX[p.slug]=p; });
+
+function renderBlogGrid() {
+  var grid=document.getElementById('blogGrid');
+  if (!grid) return;
+  grid.innerHTML=BLOG_POSTS.map(function(post){
+    return '<div class="blog-card" onclick="navigate(\'blogpost\',\''+post.slug+'\')">'+
+      '<div class="blog-card-img">'+post.icon+'</div>'+
+      '<div class="blog-card-body"><span class="blog-tag">'+post.tag+'</span>'+
+      '<div class="blog-card-title">'+post.title+'</div>'+
+      '<div class="blog-card-excerpt">'+post.excerpt+'</div>'+
+      '<div class="blog-card-meta"><span>📅 '+post.date+'</span><span>⏱ '+post.read_time+'</span></div></div></div>';
+  }).join('');
+}
+
+function renderBlogPost(slug) {
+  var post=BLOG_INDEX[slug];
+  var el=document.getElementById('blogPostContent');
+  if (!el) return;
+  if (!post){el.innerHTML='<p style="color:var(--red);">Article not found.</p>';return;}
+  el.innerHTML='<div class="blog-article-header"><span class="blog-tag">'+post.tag+'</span><h1>'+post.title+'</h1>'+
+    '<div class="meta"><span>📅 '+post.date+'</span><span>⏱ '+post.read_time+'</span><span>👤 FantasyXI Team</span></div></div>'+
+    '<article class="prose">'+post.body+'</article>'+
+    '<div style="margin-top:40px;padding:24px;background:var(--s2);border:1px solid var(--brd);border-radius:var(--r);text-align:center;">'+
+    '<div style="font-family:\'Barlow Condensed\',sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:1px;margin-bottom:8px;">Ready to put strategy into action?</div>'+
+    '<p style="color:var(--txt3);font-size:.85rem;margin-bottom:16px;">Generate 20 unique AI fantasy cricket teams for today\'s match — free, instant, no login.</p>'+
+    '<button class="btn btn-gold btn-lg" onclick="navigate(\'home\')">🤖 Generate AI Teams Now →</button></div>';
+}
+
+// ============================================================
+// CONTACT FORM
+// ============================================================
+function submitContactForm(e) {
+  e.preventDefault();
+  var name=document.getElementById('cf-name').value.trim();
+  var email=document.getElementById('cf-email').value.trim();
+  var msg=document.getElementById('cf-msg').value.trim();
+  if (!name||!email||!msg){showToast('Please fill all required fields.','#ff4d6d');return;}
+  if (!email.includes('@')){showToast('Invalid email.','#ff4d6d');return;}
+  document.getElementById('contactForm').style.display='none';
+  document.getElementById('formMsg').style.display='block';
+}
+
+// ============================================================
+// INIT — ✅ No fetch() calls, everything is inline
+// ============================================================
+document.addEventListener('DOMContentLoaded', function() {
+  buildTeamMap();          // ← builds APP_DATA from inline JSON
+  renderMatchCards();      // ← renders match cards immediately
+  renderTeamSelects();     // ← populates manual team dropdowns
+  navigate('home');
+  setStep(1);
+  document.getElementById('stepBarWrap').style.display='flex';
+  document.getElementById('appBody').className='has-steps';
+});
+</script>
+</body>
+</html>
